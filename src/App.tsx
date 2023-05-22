@@ -1,9 +1,14 @@
-
+import { BrowserRouter as Router , Routes, Route} from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import ErrorPage from "./pages/ErrorPage";
 function App() {
   return (
-    <div>
-      
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<HomePage/>}/>
+        <Route path='*' element={<ErrorPage/>}/>
+      </Routes>
+    </Router>
   );
 }
 
