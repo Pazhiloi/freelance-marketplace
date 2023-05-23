@@ -5,6 +5,7 @@ import Navigation from './Navigation/Navigation';
 import LoginButtons from './LoginButtons/LoginButtons';
 const Header: FC = () => {
   return (
+    <header className={s.header}>
     <div className='container'>
       <div className={s.wrapper}>
       <Logo/>
@@ -12,6 +13,7 @@ const Header: FC = () => {
       <LoginButtons/>
       </div>
     </div>
+    </header>
   );
 };
 

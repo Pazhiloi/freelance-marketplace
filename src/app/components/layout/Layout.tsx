@@ -9,9 +9,9 @@ interface ILayout {
 }
 const Layout: FC<ILayout> = ({children}) => {
   return (
-    <div className={s.layout}>
+    <div className='app-container'>
       <Header/>
-      <div className={s.content}>{children}</div>
+      <div className='main'>{children}</div>
       <Footer/>
     </div>
   );
