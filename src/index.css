@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,14 +6,100 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f7f6ff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #222;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  max-width: 1350px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.color-green {
+  color: #1dbf73;
+}
+
+.bg-green {
+  background-color: #1dbf73;
+}
+.bg-gray{
+  background-color: #F2F0FE
+}
+
+.color-orange {
+  color: #fba457;
+}
+.bg-orange {
+  background-color: #fba457;
+}
+.color-white{
+  color: #F6FAFD;
+}
+
+.fw-400{
+  font-weight: 400;
+}
+.fw-600{
+  font-weight: 600;
+}
+.fw-700{
+  font-weight: 700;
+}
+.fz-14{
+  font-size: 14px;
+}
+.fz-18{
+  font-size: 18px;
+}
+.fz-20{
+  font-size: 20px;
+}
+.fz-24{
+  font-size: 24px;
+}
+.fz-29{
+  font-size: 29px;
+}
+.fz-36{
+  font-size: 36px;
+}
+.w-170{
+width: 170px;
+}
+.w-120{
+width: 120px;
+}
+.h-40{
+  height: 40px;
+}
+
+.main-title{
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.title{
+  font-weight: 600;
+  font-size: 24px;
 }
