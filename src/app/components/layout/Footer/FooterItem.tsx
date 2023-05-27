@@ -15,7 +15,7 @@ const FooterItem: FC<IItem> = ({item}) => {
   const {title, inner} = item;
 
   return (
-  <div>
+  <div className={s.item}>
     <div className={`${s.title} title fw-700`}>
       {title}
     </div>

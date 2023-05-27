@@ -1,0 +1,173 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.userWrapper {
+  position: absolute;
+  top: -40px;
+  left: 150px;
+  padding: 20px;
+  background-color: transparent;
+  max-height: 120px;
+  transition: background-color 0.5s ease;
+  &.active {
+    max-height: unset;
+    background-color: #f2f0fe;
+  }
+}
+.userInfo {
+  opacity: 0;
+  transition: opacity 1.5s ease;
+  &.active {
+    opacity: 1;
+  }
+}
+.img {
+  width: 24px;
+  height: 24px;
+}
+.imgItem {
+  margin-right: 25px;
+  cursor: pointer;
+}
+.userTop {
+  display: flex;
+  align-items: center;
+}
+.name {
+  font-weight: 600;
+}
+.userImg,
+.chevron {
+  margin-left: 15px;
+}
+.userImg {
+  width: 80px;
+  height: 80px;
+}
+.chevron {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  &.active{
+   transform: rotate(-180deg);
+  }
+}
+.userButtons {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+.activeBtn,
+.btn {
+  font-size: 14px;
+}
+.activeBtn {
+  font-weight: 600;
+  padding: 8px 16px;
+  background-color: #fba457;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+.btn {
+  font-weight: 500;
+  padding: 4px 16px;
+  color: #000;
+  background-color: #ebe8ff;
+  &:last-child {
+    margin-left: -10px;
+  }
+}
+
+.userItem {
+  font-weight: 400;
+  color: #000;
+  cursor: pointer;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+.logout {
+  color: #ff4343;
+}
+
+
+@media(max-width: 1060px){
+  .wrapper{
+    justify-content: center;
+    margin-left: 5px;
+  }
+  .imgItem{
+margin-right: 15px;
+  }
+  .userWrapper{
+    top: -25px;
+  }
+  .userImg{
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+  }
+  .name{
+    font-size: 12px;
+  }
+  .userButtons{
+    flex-direction: column;
+  }
+  .activeBtn{
+    margin-bottom: 15px;
+  }
+  .btn{
+   margin-bottom: 10px;
+   &:last-child{
+    margin-left: 0;
+   }
+  }
+  .btn,
+  .activeBtn,
+   .userItem{
+    font-size: 12px;
+  }
+  .userItem{
+    padding: 0 10px;
+    &:not(:last-child){
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media(max-width: 1060px){
+  .userWrapper{
+    padding: 5px;
+    left: 115px;
+    top: -12px;
+  }
+}
+
+
+@media(max-width: 670px){
+  .name{
+    display: none;
+  }
+  .img{
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media(max-width: 340px){
+  .userWrapper{
+    left: 100px;
+  }
+}
+
+
+

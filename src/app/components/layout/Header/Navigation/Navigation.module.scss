@@ -1,4 +1,33 @@
-.nav{
+.menuList{
   display: flex;
   align-items: center;
+  margin-left: 15px;
+}
+
+@media(max-width:1300px ){
+  .menuList{
+    margin-left: 0;
+    position: absolute;
+    top: -1200px;
+    left: 0;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    height: 100vh;
+    z-index: 5;
+    background-color: green;
+    background-color: #F7F6FF;
+    transition: top 0.5s ease;
+  }
+  .closeIcon{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+  }
+  .menuList{
+    &.active{
+      top: 0;
+    }
+  }
 }

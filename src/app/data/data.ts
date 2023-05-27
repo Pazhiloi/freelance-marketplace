@@ -1,33 +1,40 @@
-import logo from '../assets/images/logo.png'
-import facebook from '../assets/images/facebook.svg'
-import twitter from '../assets/images/twitter.svg'
-import instagram from '../assets/images/instagram.svg'
-import linkedin from '../assets/images/linkedin.svg'
+import logo from "../assets/images/logo.png";
+import avatar1 from "../assets/images/avatar1.png";
+import chevronDown from "../assets/images/chevron-down.png";
+import topStar from "../assets/images/top-star.png";
+import topChat from "../assets/images/top-chat.png";
+import closeIcon from "../assets/images/close-icon.svg";
+import notification from "../assets/images/notification.png";
+import facebook from "../assets/images/facebook.svg";
+import twitter from "../assets/images/twitter.svg";
+import instagram from "../assets/images/instagram.svg";
+import linkedin from "../assets/images/linkedin.svg";
+import menu from "../assets/images/menu.svg";
 const navItems = [
   {
     id: 1,
     title: `Біржа`,
-    link: '/a',
+    link: "/a",
   },
   {
     id: 2,
     title: `Ворки`,
-    link: '/b',
+    link: "/b",
   },
-  {
-    id: 3,
-    title: `Конкурси`,
-    link: '/c',
-  },
+  // {
+  //   id: 3,
+  //   title: `Конкурси`,
+  //   link: '/c',
+  // },
   {
     id: 4,
     title: `Створити ворк`,
-    link: '/d',
+    link: "/d",
   },
   {
     id: 5,
     title: `Створити замовлення`,
-    link: '/e',
+    link: "/e",
   },
 ];
 
@@ -103,7 +110,7 @@ const footerItems = [
       {
         id: 3,
         title: `FAQ`,
-      }
+      },
     ],
   },
 ];
@@ -131,7 +138,16 @@ const followImages = [
   },
 ];
 
-
-
-
-export { logo, navItems, footerItems, followImages };
+export {
+  logo,
+  navItems,
+  footerItems,
+  followImages,
+  menu,
+  avatar1,
+  chevronDown,
+  topStar,
+  topChat,
+  notification,
+  closeIcon
+};

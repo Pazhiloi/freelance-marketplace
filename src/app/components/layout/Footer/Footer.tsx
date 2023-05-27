@@ -11,13 +11,16 @@ const Footer: FC = () => {
             {footerItems.map((item) => (
               <FooterItem key={item.id} item={item} />
             ))}
-            <div>
-              <div className={`${s.title} title fw-700`}>Follow</div>
+
+            <div className={s.lastItem}>
+              <div className={`${s.title} ${s.lastTitle} title fw-700`}>Follow</div>
+              <div className={s.imagesWrapper}>
               {
                 followImages.map(({id,desc, img}) => (
                   <img key={id} src={img} alt={desc} className={s.img} />
-                ))
-              }
+                  ))
+                }
+                </div>
             </div>
           </div>
           <div className={s.bottom}>

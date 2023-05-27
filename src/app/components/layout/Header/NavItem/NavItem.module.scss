@@ -1,3 +1,32 @@
-.item:not(:first-child){
-margin-left: 40px;
+.item:not(:first-child) {
+  margin-left: 40px;
+}
+.item{
+ white-space: nowrap;
+}
+
+@media (max-width: 1300px) {
+  .item:not(:first-child) {
+    margin-left: 0;
+  }
+  .item{
+    padding: 10px 10px;
+    transition: color 0.5s ease;
+    text-align: center;
+    &.active{
+      margin-bottom: 2rem;
+      font-size: 32px;
+    }
+    &:hover{
+      color: #1dbf73;
+    }
+  }
+  
+}
+
+
+@media (max-width: 400px){
+  .item.active{
+    font-size: 24px;
+  }
 }

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -23,19 +24,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.main{
+.main {
   flex-grow: 1;
 }
-.app-container{
+.app-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-a{
+a {
   text-decoration: none;
   color: #000;
 }
-
+.center {
+  align-items: center;
+}
 .container {
   max-width: 1350px;
   width: 100%;
@@ -50,8 +53,8 @@ a{
 .bg-green {
   background-color: #1dbf73;
 }
-.bg-gray{
-  background-color: #F2F0FE
+.bg-gray {
+  background-color: #f2f0fe;
 }
 
 .color-orange {
@@ -60,52 +63,52 @@ a{
 .bg-orange {
   background-color: #fba457;
 }
-.color-white{
-  color: #F6FAFD;
+.color-white {
+  color: #f6fafd;
 }
 
-.fw-400{
+.fw-400 {
   font-weight: 400;
 }
-.fw-600{
+.fw-600 {
   font-weight: 600;
 }
-.fw-700{
+.fw-700 {
   font-weight: 700;
 }
-.fz-14{
+.fz-14 {
   font-size: 14px;
 }
-.fz-18{
+.fz-18 {
   font-size: 18px;
 }
-.fz-20{
+.fz-20 {
   font-size: 20px;
 }
-.fz-24{
+.fz-24 {
   font-size: 24px;
 }
-.fz-29{
+.fz-29 {
   font-size: 29px;
 }
-.fz-36{
+.fz-36 {
   font-size: 36px;
 }
-.w-170{
-width: 170px;
+.w-170 {
+  width: 170px;
 }
-.w-120{
-width: 120px;
+.w-120 {
+  width: 120px;
 }
-.h-40{
+.h-40 {
   height: 40px;
 }
 
-.main-title{
+.main-title {
   font-weight: 700;
   font-size: 36px;
 }
-.title{
+.title {
   font-weight: 600;
   font-size: 24px;
 }

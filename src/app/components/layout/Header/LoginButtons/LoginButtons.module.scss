@@ -2,3 +2,12 @@
   display: flex;
   align-items: center;
 }
+
+@media(max-width: 570px){
+  .login{
+    font-size: 12px !important;
+    width: 70px;
+    margin-left: 30px;
+  }
+}
+
