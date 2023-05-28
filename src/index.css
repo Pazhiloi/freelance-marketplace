@@ -31,6 +31,7 @@ code {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow: hidden;
 }
 a {
   text-decoration: none;
@@ -112,3 +113,17 @@ a {
   font-weight: 600;
   font-size: 24px;
 }
+
+
+.item__a {
+  grid-row: 1;
+}
+
+.item__b {
+  grid-row: 2;
+}
+
+.item__c {
+  grid-row: 3;
+}
+

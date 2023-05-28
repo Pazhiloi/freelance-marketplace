@@ -10,6 +10,39 @@ import twitter from "../assets/images/twitter.svg";
 import instagram from "../assets/images/instagram.svg";
 import linkedin from "../assets/images/linkedin.svg";
 import menu from "../assets/images/menu.svg";
+import introduce from "../assets/images/introduce.jpg";
+
+const rubrics = [
+  {
+    id: 1,
+    title: `Тексти і переклади`,
+  },
+  {
+    id: 2,
+    title: `Розробка`,
+  },
+  {
+    id: 3,
+    title: `Дизайн`,
+  },
+  {
+    id: 4,
+    title: `Аудіо, відео монтаж`,
+  },
+  {
+    id: 5,
+    title: `SEO і оптимізація`,
+  },
+  {
+    id: 6,
+    title: `Бізнес  і життя`,
+  },
+  {
+    id: 7,
+    title: `Соцмережі і реклама`,
+  },
+];
+
 const navItems = [
   {
     id: 1,
@@ -139,6 +172,7 @@ const followImages = [
 ];
 
 export {
+  introduce,
   logo,
   navItems,
   footerItems,
@@ -149,5 +183,6 @@ export {
   topStar,
   topChat,
   notification,
-  closeIcon
+  closeIcon,
+  rubrics,
 };

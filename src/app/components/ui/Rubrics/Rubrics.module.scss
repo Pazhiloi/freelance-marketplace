@@ -1,0 +1,17 @@
+.items{
+   display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 20px;
+}
+.item,
+.lastItem{
+  padding: 10px 20px;
+  border: 1px solid #F2F0FE;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+
+.lastItem{
+  border: 1px solid #FBA457;
+}

@@ -1,9 +1,10 @@
 import React, { FC } from 'react';
+import FreelanceServices from '../../sections/FreelanceServices/FreelanceServices';
 
 const Home: FC = () => {
   return (
-    <div>
-      Home
+    <div className='container'>
+      <FreelanceServices/>
     </div>
   );
 };

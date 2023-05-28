@@ -1,0 +1,75 @@
+
+.section{
+  padding: 20px 0 60px;
+}
+.title,
+ .rubricsTitle{
+  margin-bottom: 30px;
+}
+.left{
+  max-width: 596px;
+  width: 100%;
+}
+
+.subtitle{
+  margin-bottom: 50px;
+}
+
+.rubricsWrapper{
+  margin-top: 50px;
+}
+
+
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.img{
+  max-width: 603px;
+  width: 100%;
+}
+
+@media(max-width: 1000px){
+  .wrapper{
+    display: block;
+  }
+  .right{
+    display: none;
+  }
+  .left{
+    max-width: 1050px;
+  }
+  .field{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media(max-width: 830px){
+  .title,
+  .subtitle{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .title{
+    font-size: 20px !important;
+  }
+  .subtitle{
+    margin-bottom: 25px;
+  }
+}
+
+@media(max-width: 570px){
+  .section{
+    padding: 20px 0 20px;
+  }
+  .rubricsInner{
+    > div{
+      > div{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
