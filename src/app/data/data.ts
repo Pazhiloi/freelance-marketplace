@@ -1,5 +1,10 @@
 import logo from "../assets/images/logo.png";
 import avatar1 from "../assets/images/avatar1.png";
+import user1 from "../assets/images/users/user1.png";
+import user2 from "../assets/images/users/user2.png";
+import user3 from "../assets/images/users/user3.png";
+import user4 from "../assets/images/users/user4.png";
+import user5 from "../assets/images/users/user5.png";
 import chevronDown from "../assets/images/chevron-down.png";
 import topStar from "../assets/images/top-star.png";
 import topChat from "../assets/images/top-chat.png";
@@ -11,7 +16,38 @@ import instagram from "../assets/images/instagram.svg";
 import linkedin from "../assets/images/linkedin.svg";
 import menu from "../assets/images/menu.svg";
 import introduce from "../assets/images/introduce.jpg";
-
+const actualWorks = [
+  {
+    id: 1,
+    img: user1,
+    title: `Зробити дизайн інтернет-магазину`,
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...`,
+  },
+  {
+    id: 2,
+    img: user2,
+    title: `Зверстати landing page`,
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...`,
+  },
+  {
+    id: 3,
+    img: user3,
+    title: `Зробити дизайн сайту-каталогу і посадити на який-небудь ко...`,
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...`,
+  },
+  {
+    id: 4,
+    img: user4,
+    title: `Просування instagram`,
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...`,
+  },
+  {
+    id: 5,
+    img: user5,
+    title: `Потрібен веб дизайнер!`,
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...`,
+  },
+];
 const rubrics = [
   {
     id: 1,
@@ -172,6 +208,7 @@ const followImages = [
 ];
 
 export {
+  actualWorks,
   introduce,
   logo,
   navItems,
