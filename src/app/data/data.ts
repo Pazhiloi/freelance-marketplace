@@ -1,10 +1,18 @@
+import {
+  avatar1,
+  user1,
+  user2,
+  user3,
+  user4,
+  user5,
+  user6,
+  user7,
+  user8,
+  user9,
+  user10,
+} from "./usersImages";
+
 import logo from "../assets/images/logo.png";
-import avatar1 from "../assets/images/avatar1.png";
-import user1 from "../assets/images/users/user1.png";
-import user2 from "../assets/images/users/user2.png";
-import user3 from "../assets/images/users/user3.png";
-import user4 from "../assets/images/users/user4.png";
-import user5 from "../assets/images/users/user5.png";
 import chevronDown from "../assets/images/chevron-down.png";
 import topStar from "../assets/images/top-star.png";
 import topChat from "../assets/images/top-chat.png";
@@ -16,6 +24,55 @@ import instagram from "../assets/images/instagram.svg";
 import linkedin from "../assets/images/linkedin.svg";
 import menu from "../assets/images/menu.svg";
 import introduce from "../assets/images/introduce.jpg";
+
+const topWorkers = [
+  {
+    id: 1,
+    img: user6,
+    name: `Марина Королёва`,
+    profession: `Разработчик PHP`,
+    projectsCompleted: 65,
+    rating: 4.5,
+    online: true,
+  },
+  {
+    id: 2,
+    img: user7,
+    name: `Семён Сергеев`,
+    profession: `Копирайтер`,
+    projectsCompleted: 104,
+    rating: 4,
+    online: true,
+  },
+  {
+    id: 3,
+    img: user8,
+    name: `Ангелина Сорокина`,
+    profession: `Дизайнер сайтов`,
+    projectsCompleted: 25,
+    rating: 5,
+    online: false,
+  },
+  {
+    id: 4,
+    img: user9,
+    name: `Никита Зайцев`,
+    profession: `Маркетолог`,
+    projectsCompleted: 144,
+    rating: 4,
+    online: true,
+  },
+  {
+    id: 5,
+    img: user10,
+    name: `Наталья Захарова`,
+    profession: `Motion дизайнер`,
+    projectsCompleted: 71,
+    rating: 5,
+    online: false,
+  },
+];
+
 const actualWorks = [
   {
     id: 1,
@@ -208,6 +265,7 @@ const followImages = [
 ];
 
 export {
+  topWorkers,
   actualWorks,
   introduce,
   logo,

@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import s from "./ActualWorks.module.scss";
+import s from "../../shared/ActualWorks.module.scss";
 import { actualWorks } from '../../../data/data';
 import ActualWork from '../../ui/ActualWork/ActualWork';
 const ActualWorks: FC = () => {

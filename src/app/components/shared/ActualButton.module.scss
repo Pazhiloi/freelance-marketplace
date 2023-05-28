@@ -1,0 +1,19 @@
+.button{
+  width: 380px;
+  height: 40px;
+  color: #1DBF73;
+  border: 1px solid #1DBF73;
+  transition: all 0.5s ease;
+  &:hover{
+    background-color: #1DBF73;
+    color: #F6FAFD;
+  }
+  margin: 0 auto;
+}
+
+@media(max-width: 500px){
+  .button{
+    max-width: 380px;
+    width: 100%;
+  }
+}
