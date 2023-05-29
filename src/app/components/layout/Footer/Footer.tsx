@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import s from './Footer.module.scss'
 import { followImages, footerItems } from '../../../data/data';
 import FooterItem from './FooterItem';
+import FollowImage from './FollowImage';
 const Footer: FC = () => {
   return (
     <footer className={s.footer}>
@@ -17,7 +18,7 @@ const Footer: FC = () => {
               <div className={s.imagesWrapper}>
               {
                 followImages.map(({id,desc, img}) => (
-                  <img key={id} src={img} alt={desc} className={s.img} />
+                  <FollowImage key={id} img={img} desc={desc}/>
                   ))
                 }
                 </div>

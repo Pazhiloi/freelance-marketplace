@@ -140,7 +140,7 @@ const navItems = [
   {
     id: 1,
     title: `Біржа`,
-    link: "/a",
+    link: "/market",
   },
   {
     id: 2,

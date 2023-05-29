@@ -5,12 +5,21 @@ import { writeClassForGrids } from '../../../utils/classes/writeClassForGrids';
 interface IRubric{
   title: string;
   id: number;
+  isMarket:boolean;
 }
-const Rubric: FC<IRubric> = ({title, id}) => {
+const Rubric: FC<IRubric> = ({title, id, isMarket}) => {
   const [classes, setClasses] = useState(writeClassForGrids(id));
 
   return (
-    <Button className={`fw-400 fz-14 ${s.item} ${classes}`}>{title}</Button>
+    <Button
+      className={
+        isMarket
+          ? `fw-400 fz-14 ${s.item}`
+          : `fw-400 fz-14 ${s.item} ${classes}`
+      }
+    >
+      {title}
+    </Button>
   );
 };
 

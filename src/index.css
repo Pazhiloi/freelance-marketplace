@@ -114,7 +114,6 @@ a {
   font-size: 24px;
 }
 
-
 .item__a {
   grid-row: 1;
 }
@@ -126,4 +125,5 @@ a {
 .item__c {
   grid-row: 3;
 }
+
 
