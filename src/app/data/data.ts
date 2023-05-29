@@ -24,6 +24,7 @@ import instagram from "../assets/images/instagram.svg";
 import linkedin from "../assets/images/linkedin.svg";
 import menu from "../assets/images/menu.svg";
 import introduce from "../assets/images/introduce.jpg";
+import { works } from "./works";
 
 const topWorkers = [
   {
@@ -264,7 +265,9 @@ const followImages = [
   },
 ];
 
+
 export {
+  works,
   topWorkers,
   actualWorks,
   introduce,

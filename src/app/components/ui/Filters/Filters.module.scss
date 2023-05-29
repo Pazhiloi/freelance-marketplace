@@ -1,0 +1,33 @@
+.wrapper,
+.inputs {
+  display: flex;
+  align-items: center;
+}
+.inputs {
+  > span {
+    margin: 0 8px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+.input {
+  max-width: 195px;
+  width: 100%;
+  height: 42px;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 21px 25px;
+  border: 1px solid #f2f0fe;
+  border-radius: 20px;
+  outline: 0;
+  &::placeholder{
+    color: #656084;
+  }
+}
+select {
+  margin-left: 30px;
+}
+.option {
+  font-weight: 600;
+  font-size: 18px;
+}

@@ -1,0 +1,130 @@
+.item {
+  max-width: 1320px;
+  width: 100%;
+  padding: 20px;
+  background: #f6fafd;
+  border: 1px solid #f2f0fe;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.title,
+.price {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.title {
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.userWrapper {
+  display: flex;
+  align-items: center;
+}
+.img {
+  width: 120px;
+  height: 120px;
+}
+.info {
+  margin-left: 20px;
+}
+.name,
+.projects {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.ratingWrapper {
+  display: flex;
+  align-items: center;
+}
+.reviews {
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 20px;
+  color: #000;
+}
+.right,
+.priceWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.right {
+  justify-content: space-between;
+}
+
+.price {
+  margin-bottom: 10px;
+  color: #1dbf73;
+}
+.uploaded,
+.offers {
+  font-weight: 400;
+  color: #656084;
+}
+
+.uploaded {
+  font-size: 14px;
+}
+.offers {
+  font-size: 18px;
+}
+
+@media (max-width: 1100px) {
+  .price,
+  .title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 720px) {
+  .item{
+    &:not(:last-child){
+      margin-bottom: 20px;
+    }
+  }
+  .name,
+  .projects {
+    font-size: 14px;
+  }
+  .info {
+    margin-left: 10px;
+  }
+  .img {
+    width: 60px;
+    height: 60px;
+  }
+  .item{
+    flex-direction: column;
+  }
+  .left{
+    margin-bottom: 30px;
+  }
+  .right{
+    flex-direction: row;
+  }
+  .priceWrapper{
+   align-items: flex-start;
+  }
+}
+
+@media(max-width: 500px){
+  .priceWrapper{
+    margin-bottom: 10px;
+  }
+  .right{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .name,
+  .projects{
+    font-size: 12px;
+  }
+}
