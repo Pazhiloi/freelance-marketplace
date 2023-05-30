@@ -1,5 +1,6 @@
 import {
   avatar1,
+  avatar2,
   user1,
   user2,
   user3,
@@ -22,9 +23,75 @@ import facebook from "../assets/images/facebook.svg";
 import twitter from "../assets/images/twitter.svg";
 import instagram from "../assets/images/instagram.svg";
 import linkedin from "../assets/images/linkedin.svg";
+import globe from "../assets/images/globe.svg";
+import clock from "../assets/images/clock.svg";
+import bank from "../assets/images/bank.svg";
+import languageIcon from "../assets/images/language-icon.svg";
+import note from "../assets/images/note.svg";
+import settings from "../assets/images/settings.svg";
 import menu from "../assets/images/menu.svg";
 import introduce from "../assets/images/introduce.jpg";
 import { works } from "./works";
+
+const detailedInfo = [
+  {
+    id: 1,
+    img: globe,
+    title: `Казахстан, Алматы`,
+    name: `Країна`,
+  },
+  {
+    id: 2,
+    img: clock,
+    title: 3,
+    name: `Досвід на сайті`,
+  },
+  {
+    id: 3,
+    img: bank,
+    title: `Казахстан, КазНУ, Бакалавр`,
+    name: `Освіта`,
+  },
+  {
+    id: 4,
+    img: languageIcon,
+    title: `Казахский, Русский`,
+    name: `Знання мов`,
+  },
+  {
+    id: 5,
+    img: note,
+    title: `Сертификат 1, 2020 года`,
+    name: `Сертифікати`,
+  },
+];
+
+const skills = [
+  {
+    id: 1,
+    skill: `Figma`,
+  },
+  {
+    id: 2,
+    skill: `Adobe photoshop`,
+  },
+  {
+    id: 3,
+    skill: `Adobe illustrator`,
+  },
+  {
+    id: 4,
+    skill: `Corel draw`,
+  },
+  {
+    id: 5,
+    skill: `Adobe After Effects`,
+  },
+  {
+    id: 6,
+    skill: `HTML/CSS`,
+  },
+];
 
 const topWorkers = [
   {
@@ -265,8 +332,11 @@ const followImages = [
   },
 ];
 
-
 export {
+  settings,
+  avatar2,
+  detailedInfo,
+  skills,
   works,
   topWorkers,
   actualWorks,
