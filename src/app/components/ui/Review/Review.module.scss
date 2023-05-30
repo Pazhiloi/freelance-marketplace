@@ -1,0 +1,44 @@
+.item{
+  padding: 20px;
+  background-color: #F6FAFD;
+border: 1px solid #F2F0FE;
+border-radius: 20px;
+}
+
+.top,
+.name{
+  margin-bottom: 20px;
+}
+.top{
+  display: flex;
+  align-items: center;
+}
+.img{
+  width: 80px;
+  height: 80px;
+}
+.nameWrapper{
+  margin-left: 20px;
+}
+.name{
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.text{
+  font-weight: 400;
+  font-size: 14px;
+}
+
+@media(max-width: 400px){
+  .nameWrapper{
+    margin-left: 15px;
+  }
+  .name{
+    font-size: 14px;
+  }
+  .img{
+    width: 60px;
+    height: 60px;
+  }
+}
