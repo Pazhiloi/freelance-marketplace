@@ -19,6 +19,7 @@ import topStar from "../assets/images/top-star.png";
 import topChat from "../assets/images/top-chat.png";
 import closeIcon from "../assets/images/close-icon.svg";
 import notification from "../assets/images/notification.png";
+import add from "../assets/images/add.png";
 import facebook from "../assets/images/facebook.svg";
 import twitter from "../assets/images/twitter.svg";
 import instagram from "../assets/images/instagram.svg";
@@ -333,6 +334,7 @@ const followImages = [
 ];
 
 export {
+  add,
   settings,
   avatar2,
   detailedInfo,

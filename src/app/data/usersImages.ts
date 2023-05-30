@@ -10,6 +10,7 @@ import user7 from "../assets/images/users/user7.png";
 import user8 from "../assets/images/users/user8.png";
 import user9 from "../assets/images/users/user9.png";
 import user10 from "../assets/images/users/user10.png";
+import user11 from "../assets/images/users/user11.png";
 
 export {
   avatar1,
@@ -24,4 +25,5 @@ export {
   user8,
   user9,
   user10,
+  user11,
 };

@@ -1,0 +1,37 @@
+.item,
+.img {
+  width: 308px;
+}
+.item {
+  cursor: pointer;
+}
+
+.img,
+.title {
+  margin-bottom: 20px;
+}
+.img {
+  margin-bottom: 20px;
+  height: 172px;
+}
+.title,
+.price {
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.price {
+  color: #1dbf73;
+}
+@media (max-width: 670px) {
+  .title,
+  .price {
+    margin-left: 0;
+  }
+}
+@media (max-width: 400px) {
+  .item,
+  .img {
+    width: 260px;
+  }
+}

@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import s from'./Jobs.module.scss'
+import b from'../../shared/LoadMoreButton.module.scss'
 import Filters from '../../ui/Filters/Filters';
 import { works } from '../../../data/data';
 import Job from '../../ui/Job/Job';
@@ -43,8 +44,8 @@ const Jobs: FC = () => {
           )
         )}
       </div>
-      <div className={s.loadMore}>
-        <Button className={s.button}>Завантажити більше</Button>
+      <div className={b.loadMore}>
+        <Button className={b.button}>Завантажити більше</Button>
       </div>
     </section>
   );
