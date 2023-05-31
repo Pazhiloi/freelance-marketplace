@@ -1,8 +1,19 @@
 import { user11, user4, user6 } from "./usersImages";
 import pc from "../assets/images/pc.png";
+import { orderDocument } from "./data";
 const myWorks: any[] = []
 const myReviews: any[] = []
 const works: any[] = []
+const orderDocuments: any[] = []
+
+for (let i = 0; i < 3; i++) {
+  const document = {
+    id: i + 1,
+    img: orderDocument,
+    title: `Документ ${i + 1}.png `,
+  };
+  orderDocuments.push(document);
+}
 
 for (let i = 0; i < 6; i++) {
   const myReview = {
@@ -53,4 +64,4 @@ works.push(work);
   
 }
 
-export { works, myWorks, myReviews};
+export { works, myWorks, myReviews, orderDocuments };

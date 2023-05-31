@@ -15,6 +15,8 @@ import {
 
 import logo from "../assets/images/logo.png";
 import chevronDown from "../assets/images/chevron-down.png";
+import chevronRight from "../assets/images/chevron-right.png";
+import orderDocument from "../assets/images/order-document.png";
 import topStar from "../assets/images/top-star.png";
 import topChat from "../assets/images/top-chat.png";
 import closeIcon from "../assets/images/close-icon.svg";
@@ -34,6 +36,21 @@ import menu from "../assets/images/menu.svg";
 import introduce from "../assets/images/introduce.jpg";
 import { works } from "./works";
 
+
+const tags = [
+  {
+    id: 1,
+    title: `Дизайн`,
+  },
+  {
+    id: 2,
+    title: `Веб і мобільний дизайн`,
+  },
+  {
+    id: 3,
+    title: `Веб-дизайн`,
+  },
+];
 const detailedInfo = [
   {
     id: 1,
@@ -334,6 +351,9 @@ const followImages = [
 ];
 
 export {
+  orderDocument,
+  chevronRight,
+  tags,
   add,
   settings,
   avatar2,

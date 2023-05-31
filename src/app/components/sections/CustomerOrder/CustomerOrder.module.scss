@@ -1,0 +1,63 @@
+.section{
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left{
+  flex: 0.9;
+}
+
+
+.customerWrapper{
+  display: flex;
+  align-items: center;
+}
+.img{
+  width: 120px;
+  height: 120px;
+}
+.nameWrapper,
+.reviews{
+  margin-left: 20px;
+}
+
+.name,
+.projects{
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 12px;
+}
+.ratingWrapper{
+  display: flex;
+  align-items: center;
+}
+.reviews{
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media(max-width: 950px){
+.section{
+  flex-direction: column-reverse;
+}
+.right{
+  margin-bottom: 30px;
+}
+}
+
+@media(max-width: 530px){
+  .img{
+    width: 60px;
+    height: 60px;
+  }
+  .name,
+  .projects{
+    font-size: 14px;
+  }
+  .nameWrapper{
+    margin-left: 10px;
+  }
+  
+}
