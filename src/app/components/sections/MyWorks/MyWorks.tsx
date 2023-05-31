@@ -1,10 +1,9 @@
 import React, { FC } from "react";
 import s from "./MyWorks.module.scss";
-import b from "../../shared/LoadMoreButton.module.scss";
 import { myWorks } from "../../../data/works";
 import MyWork from "../../ui/MyWork/MyWork";
-import Button from "../../ui/Button/Button";
 import { add } from "../../../data/data";
+import LoadMore from "../../ui/LoadMore/LoadMore";
 const MyWorks: FC = () => {
   return (
     <div className={s.section}>
@@ -19,10 +18,7 @@ const MyWorks: FC = () => {
           <MyWork key={id} title={title} price={price} img={img} />
         ))}
       </div>
-
-      <div className={b.loadMore}>
-        <Button className={b.button}>Завантажити більше</Button>
-      </div>
+      <LoadMore/>
     </div>
   );
 };

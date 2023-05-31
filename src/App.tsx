@@ -4,6 +4,7 @@ import ErrorPage from "./pages/ErrorPage";
 import MarketPage from "./pages/MarketPage";
 import ProfilePage from "./pages/ProfilePage";
 import OrdersPage from "./pages/OrdersPage";
+import FeaturedPage from "./pages/FeaturedPage";
 function App() {
   return (
     <Routes>
@@ -11,6 +12,7 @@ function App() {
         <Route path='/market' element={<MarketPage/>}/>
         <Route path='/profile' element={<ProfilePage/>}/>
         <Route path='/orders' element={<OrdersPage/>}/>
+        <Route path='/featured' element={<FeaturedPage/>}/>
         <Route path='*' element={<ErrorPage/>}/>
       </Routes>
   );

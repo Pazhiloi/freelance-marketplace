@@ -1,4 +1,4 @@
-import { user11, user6 } from "./usersImages";
+import { user11, user4, user6 } from "./usersImages";
 import pc from "../assets/images/pc.png";
 const myWorks: any[] = []
 const myReviews: any[] = []
@@ -20,8 +20,12 @@ for (let i = 0; i < 11; i++) {
   const myWork = {
     id: i + 1,
     title: `Дизайн сайту`,
-    price: 50000,
+    price: Math.floor(Math.random() * 50000),
     img: pc,
+    userImg: user4,
+    name: "Екатерина Иванова",
+    rating: 4,
+    projects: 45,
   };
   myWorks.push(myWork)
 }

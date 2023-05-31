@@ -1,0 +1,62 @@
+.item {
+  background: #f6fafd;
+  border: 1px solid #f2f0fe;
+  border-radius: 10px;
+}
+
+.top {
+  position: relative;
+}
+.title,
+.price,
+.userWrapper {
+  margin-bottom: 20px;
+}
+.title,
+.price{
+  font-weight: 600;
+  font-size: 18px;
+}
+.price{
+  color: #1dbf73;
+}
+.userWrapper{
+  display: flex;
+  align-items: center;
+}
+.userImg{
+  width: 60px;
+  height: 60px;
+}
+.nameWrapper{
+  margin-left: 12px;
+}
+.name{
+  margin-bottom: 10px;
+  color: #000;
+}
+.projects{
+  color: #b0aad0;
+  font-size: 14px;
+  font-weight: 400;
+}
+.info {
+  padding: 20px;
+}
+.star {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media(max-width: 400px){
+  .item,
+  .img
+  {
+    width: 260px;
+  }
+  .info{
+    padding: 15px;
+  }
+}

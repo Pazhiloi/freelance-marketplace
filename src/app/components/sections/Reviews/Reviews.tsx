@@ -1,9 +1,8 @@
 import React, { FC, useState } from 'react';
 import s from "./Reviews.module.scss";
-import b from "../../shared/LoadMoreButton.module.scss";
-import Button from '../../ui/Button/Button';
 import { myReviews } from '../../../data/works';
 import Review from '../../ui/Review/Review';
+import LoadMore from '../../ui/LoadMore/LoadMore';
 const Reviews: FC = () => {
   const [isChecked, setIsChecked] = useState('pos');
   return (
@@ -26,9 +25,7 @@ const Reviews: FC = () => {
           <Review key={id} name={name} rating={rating} img={img} text={text} />
         ))}
       </div>
-      <div className={b.loadMore}>
-        <Button className={b.button}>Завантажити більше</Button>
-      </div>
+      <LoadMore/>
     </div>
   );
 };

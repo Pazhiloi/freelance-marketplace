@@ -1,10 +1,9 @@
 import React, { FC } from 'react';
 import s from'./Jobs.module.scss'
-import b from'../../shared/LoadMoreButton.module.scss'
 import Filters from '../../ui/Filters/Filters';
 import { works } from '../../../data/data';
 import Job from '../../ui/Job/Job';
-import Button from '../../ui/Button/Button';
+import LoadMore from '../../ui/LoadMore/LoadMore';
 const Jobs: FC = () => {
   return (
     <section className={s.section}>
@@ -44,9 +43,7 @@ const Jobs: FC = () => {
           )
         )}
       </div>
-      <div className={b.loadMore}>
-        <Button className={b.button}>Завантажити більше</Button>
-      </div>
+      <LoadMore/>
     </section>
   );
 };
