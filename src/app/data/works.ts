@@ -22,6 +22,9 @@ for (let i = 0; i < 6; i++) {
     rating: 4,
     img: user11,
     text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. `,
+    price: Math.floor(Math.random() * 50000),
+    improvements: 5,
+    workTerm: 3
   };
   myReviews.push(myReview);
   
