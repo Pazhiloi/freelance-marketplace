@@ -27,6 +27,9 @@ for (let i = 0; i < 11; i++) {
 }
 
 for (let i = 0; i < 5; i++) {
+  const statuses = ["Прийом ставок", "Завершено", "Закритий", "Виконується"];
+  const randomStatusIndex = Math.floor(Math.random() * statuses.length);
+  const randomStatus = statuses[randomStatusIndex];
 const work = {
   id: i + 1,
   title: "Нужно сделать Дизайн сайта по тематике авто",
@@ -38,6 +41,8 @@ const work = {
   reviews: 15,
   uploaded: "4 часа 28 минут назад",
   offers: 50,
+  status: randomStatus,
+  text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus volutpat sollicitudin in ligula. Massa in ultricies vitae varius habitasse. Est lacus eros nec fermentum, id gravida. Dui aliquet dolor convallis mauris. Massa in ultricies vitae varius habitasse. Est lacus eros nec fermentum...`,
 };
 
 works.push(work);

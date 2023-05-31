@@ -3,12 +3,14 @@ import HomePage from "./pages/HomePage";
 import ErrorPage from "./pages/ErrorPage";
 import MarketPage from "./pages/MarketPage";
 import ProfilePage from "./pages/ProfilePage";
+import OrdersPage from "./pages/OrdersPage";
 function App() {
   return (
     <Routes>
         <Route path='/' element={<HomePage/>}/>
         <Route path='/market' element={<MarketPage/>}/>
         <Route path='/profile' element={<ProfilePage/>}/>
+        <Route path='/orders' element={<OrdersPage/>}/>
         <Route path='*' element={<ErrorPage/>}/>
       </Routes>
   );
