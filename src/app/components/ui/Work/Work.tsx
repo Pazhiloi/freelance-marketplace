@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
-import s from'./FeatureWork.module.scss'
+import s from'./Work.module.scss'
 import FeatureStar from '../FeatureStar/FeatureStar';
 
-interface IFeatureWork {
+interface IWork {
   id: number;
   title: string;
   price: number;
@@ -12,7 +12,7 @@ interface IFeatureWork {
   rating: number;
   projects: number;
 }
-const FeatureWork: FC<IFeatureWork> = ({
+const Work: FC<IWork> = ({
   id,
   title,
   price,
@@ -47,4 +47,4 @@ const FeatureWork: FC<IFeatureWork> = ({
   );
 };
 
-export default FeatureWork;
+export default Work;

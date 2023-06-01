@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import s from'./Jobs.module.scss'
+import t from'../../shared/WorksTop.module.scss'
 import Filters from '../../ui/Filters/Filters';
 import { works } from '../../../data/data';
 import Job from '../../ui/Job/Job';
@@ -7,9 +8,9 @@ import LoadMore from '../../ui/LoadMore/LoadMore';
 const Jobs: FC = () => {
   return (
     <section className={s.section}>
-      <div className={s.top}>
-        <div className={s.left}>65 проектів по дизайну</div>
-        <div className={s.right}>
+      <div className={t.top}>
+        <div className={t.left}>65 проектів по дизайну</div>
+        <div className={t.right}>
           <Filters />
         </div>
       </div>

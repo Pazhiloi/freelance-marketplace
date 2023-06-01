@@ -5,13 +5,13 @@ import Rubric from "./Rubric";
 import Button from "../Button/Button";
 import { useLocation } from "react-router-dom";
 const Rubrics: FC = () => {
-  const [isMarket, setIsMarket] = useState(true);
+  const [isHome, setIsHome] = useState(true);
   const { pathname } = useLocation();
   useEffect(() => {
-    if (pathname === "/market") {
-      setIsMarket(true);
+    if (pathname === "/") {
+      setIsHome(true);
     }else{
-      setIsMarket(false);
+      setIsHome(false);
     }
   }, [pathname]);
   
@@ -20,11 +20,11 @@ const Rubrics: FC = () => {
       <div className={s.wrapper}>
         <div className={s.items}>
           {rubrics.map((r, idx) => (
-            <Rubric key={r.id} title={r.title} id={idx} isMarket={isMarket} />
+            <Rubric key={r.id} title={r.title} id={idx} isHome={isHome} />
           ))}
           <Button
             className={
-              isMarket
+              !isHome
                 ? `color-orange ${s.lastItem}`
                 : `color-orange ${s.lastItem} item__c`
             }

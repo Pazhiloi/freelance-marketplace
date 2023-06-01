@@ -231,7 +231,7 @@ const navItems = [
   {
     id: 2,
     title: `Ворки`,
-    link: "/b",
+    link: "/works",
   },
   // {
   //   id: 3,

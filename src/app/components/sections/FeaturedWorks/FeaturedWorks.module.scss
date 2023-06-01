@@ -2,7 +2,7 @@
   padding: 30px 0;
 }
 
-.title,.items{
+.title{
   margin-bottom: 60px;
 }
 .title{
@@ -12,34 +12,10 @@
  }
 }
 
-.items{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-}
-
-@media(max-width:1360px){
-  .items{
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  place-items: center;
-}
-}
-@media(max-width:1000px){
-  .items{
-  grid-template-columns: repeat(2, 1fr);
-}
-}
 @media(max-width:670px){
-  .title,
-  .items{
+  .title{
     margin-bottom: 30px;
+    font-size: 24px !important;
   }
-  .items{
-  grid-template-columns: repeat(1, 1fr);
-}
-.title{
-  font-size: 24px !important;
-}
 }
 

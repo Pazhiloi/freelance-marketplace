@@ -1,18 +1,19 @@
 import React, { FC } from "react";
 import s from "./FeaturedWorks.module.scss";
+import w from '../../shared/WorkItems.module.scss'
 import { myWorks } from "../../../data/works";
-import FeatureWork from "../../ui/FeatureWork/FeatureWork";
 import LoadMore from "../../ui/LoadMore/LoadMore";
+import Work from "../../ui/Work/Work";
 const FeaturedWorks: FC = () => {
   return (
     <div className={s.section}>
       <h1 className={`${s.title} main-title`}>
         <span>Вибрані</span> роботи
       </h1>
-      <div className={s.items}>
+      <div className={w.items}>
         {myWorks.map(
           ({ id, title, price, img, userImg, name, rating, projects }) => (
-            <FeatureWork
+            <Work
               key={id}
               id={id}
               title={title}
