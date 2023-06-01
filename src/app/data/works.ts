@@ -31,6 +31,15 @@ for (let i = 0; i < 6; i++) {
 }
 
 for (let i = 0; i < 11; i++) {
+  const statuses = ["Завершено", "Виконується"];
+  const randomStatusIndex = Math.floor(Math.random() * statuses.length);
+  const randomStatus = statuses[randomStatusIndex];
+
+  const plans = ["Стандарт пакет", "Економ пакет", "Преміум пакет"];
+  const randomPlanIndex = Math.floor(Math.random() * plans.length);
+  const randomPlan = plans[randomPlanIndex];
+
+  
   const myWork = {
     id: i + 1,
     title: `Дизайн сайту`,
@@ -40,6 +49,9 @@ for (let i = 0; i < 11; i++) {
     name: "Екатерина Иванова",
     rating: 4,
     projects: 45,
+    status: randomStatus,
+    date: `26.03.2021`,
+    plan: randomPlan,
   };
   myWorks.push(myWork)
 }

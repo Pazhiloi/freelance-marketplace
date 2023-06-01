@@ -9,33 +9,48 @@
 }
 .title,
 .price,
-.userWrapper {
+.userWrapper,
+.plan,
+.dateWrapper,
+.status {
   margin-bottom: 20px;
 }
 .title,
-.price{
+.price,
+.status {
   font-weight: 600;
   font-size: 18px;
 }
-.price{
-  color: #1dbf73;
+.plan,
+.date {
+  color: #b0aad0;
 }
-.userWrapper{
+.price {
+  color: #1dbf73;
+  &.black {
+    color: #222;
+    margin-bottom: 0;
+  }
+}
+.userWrapper,
+.dateWrapper,
+.buttons,
+.button {
   display: flex;
   align-items: center;
 }
-.userImg{
+.userImg {
   width: 60px;
   height: 60px;
 }
-.nameWrapper{
+.nameWrapper {
   margin-left: 12px;
 }
-.name{
+.name {
   margin-bottom: 10px;
   color: #000;
 }
-.projects{
+.projects {
   color: #b0aad0;
   font-size: 14px;
   font-weight: 400;
@@ -50,13 +65,34 @@
   top: 0;
 }
 
-@media(max-width: 400px){
+.date {
+  margin-left: 20px;
+}
+.button {
+  width: 124px;
+  height: 36px;
+  font-weight: 600;
+  justify-content: center;
+  &.chat {
+    background-color: #d7ffec;
+  }
+  &.more {
+    background-color: #ebe8ff;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .price{
+    &.black{
+      font-size: 14px;
+    }
+  }
   .item,
-  .img
-  {
+  .img {
     width: 260px;
   }
-  .info{
+  .info {
     padding: 15px;
   }
 }
