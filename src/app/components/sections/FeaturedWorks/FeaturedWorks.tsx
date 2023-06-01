@@ -6,7 +6,7 @@ import LoadMore from "../../ui/LoadMore/LoadMore";
 import Work from "../../ui/Work/Work";
 const FeaturedWorks: FC = () => {
   return (
-    <div className={s.section}>
+    <section className={s.section}>
       <h1 className={`${s.title} main-title`}>
         <span>Вибрані</span> роботи
       </h1>
@@ -28,7 +28,7 @@ const FeaturedWorks: FC = () => {
         )}
       </div>
       <LoadMore/>
-    </div>
+    </section>
   );
 };
 

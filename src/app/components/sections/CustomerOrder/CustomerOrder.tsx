@@ -23,7 +23,7 @@ const renderEditButtons = () => {
 
   
   return (
-    <div className={s.section}>
+    <section className={s.section}>
       <div className={s.left}>
         <OrderDescription />
       </div>
@@ -43,7 +43,7 @@ const renderEditButtons = () => {
         </div>
         <Button className={s.messageButton}>Написати</Button>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -11,7 +11,7 @@ const ProfileTop: FC = () => {
     setIsDetailActive(!isDetailActive)
   }
   return (
-    <div className={s.section}>
+    <section className={s.section}>
       <div className={s.left}>
         <div className={s.subtitle}>Дизайнер </div>
         <div className={s.title}>
@@ -51,7 +51,7 @@ const ProfileTop: FC = () => {
           <img src={settings} alt="" className={s.settingsImg} />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

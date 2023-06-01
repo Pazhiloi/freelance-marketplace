@@ -8,6 +8,7 @@ import FeaturedPage from "./pages/FeaturedPage";
 import OrderPage from "./pages/OrderPage";
 import WorksPage from "./pages/WorksPage";
 import HistoryPage from "./pages/HistoryPage";
+import CreateOrderPage from "./pages/CreateOrderPage";
 function App() {
   return (
     <Routes>
@@ -19,6 +20,7 @@ function App() {
         <Route path='/works' element={<WorksPage/>}/>
         <Route path='/history' element={<HistoryPage/>}/>
         <Route path='/order' element={<OrderPage/>}/>
+        <Route path='/create/order' element={<CreateOrderPage/>}/>
         <Route path='*' element={<ErrorPage/>}/>
       </Routes>
   );

@@ -6,7 +6,7 @@ import LoadMore from '../../ui/LoadMore/LoadMore';
 const Reviews: FC = () => {
   const [isChecked, setIsChecked] = useState('pos');
   return (
-    <div className={s.section}>
+    <section className={s.section}>
       <h2 className={`title ${s.title}`}>Відгуки</h2>
       <div className={s.tabs}>
         <div
@@ -26,7 +26,7 @@ const Reviews: FC = () => {
         ))}
       </div>
       <LoadMore/>
-    </div>
+    </section>
   );
 };
 

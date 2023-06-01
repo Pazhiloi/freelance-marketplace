@@ -4,7 +4,7 @@ import { works } from '../../../data/works';
 import MyOrder from '../../ui/MyOrder/MyOrder';
 const MyOrders: FC = () => {
   return (
-    <div className={s.section}>
+    <section className={s.section}>
       <h1 className={`${s.title} maxin-title`}>
         Мої <span>замовлення</span>
       </h1>
@@ -34,7 +34,7 @@ const MyOrders: FC = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

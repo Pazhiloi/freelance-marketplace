@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import s from "./OfferService.module.scss";
 const OfferService: FC = () => {
   return (
-    <div className={s.section}>
+    <section className={s.section}>
       <h2 className={`title ${s.sectionTitle}`}>Предложить услугу</h2>
       <form className={s.form}>
         <div className={s.item}>
@@ -34,7 +34,7 @@ const OfferService: FC = () => {
           </button>
         </div>
       </form>
-    </div>
+    </section>
   );
 };
 

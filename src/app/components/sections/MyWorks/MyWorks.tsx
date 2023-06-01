@@ -6,7 +6,7 @@ import { add } from "../../../data/data";
 import LoadMore from "../../ui/LoadMore/LoadMore";
 const MyWorks: FC = () => {
   return (
-    <div className={s.section}>
+    <section className={s.section}>
       <h2 className={`title ${s.title}`}>Мої ворки</h2>
 
       <div className={s.items}>
@@ -19,7 +19,7 @@ const MyWorks: FC = () => {
         ))}
       </div>
       <LoadMore/>
-    </div>
+    </section>
   );
 };
 
