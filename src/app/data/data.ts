@@ -15,6 +15,9 @@ import {
 
 import logo from "../assets/images/logo.png";
 import chevronDown from "../assets/images/chevron-down.png";
+import pageUp from "../assets/images/page-up-major.png";
+import pageDown from "../assets/images/page-down.png";
+import fileText from "../assets/images/file-text.png";
 import chevronRight from "../assets/images/chevron-right.png";
 import orderDocument from "../assets/images/order-document.png";
 import topStar from "../assets/images/top-star.png";
@@ -35,7 +38,6 @@ import settings from "../assets/images/settings.svg";
 import menu from "../assets/images/menu.svg";
 import introduce from "../assets/images/introduce.jpg";
 import { works } from "./works";
-
 
 const tags = [
   {
@@ -351,6 +353,9 @@ const followImages = [
 ];
 
 export {
+  pageUp,
+  pageDown,
+  fileText,
   orderDocument,
   chevronRight,
   tags,
