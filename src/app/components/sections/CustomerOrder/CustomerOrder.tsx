@@ -4,6 +4,7 @@ import OrderDescription from '../../ui/OrderDescription/OrderDescription';
 import { user6 } from '../../../data/usersImages';
 import Button from '../../ui/Button/Button';
 import { isFreelancer } from '../../screens/order/Order';
+import User from '../../ui/User/User';
 
 const CustomerOrder: FC = () => {
 const renderEditButtons = () => {
@@ -29,18 +30,7 @@ const renderEditButtons = () => {
       </div>
       <div className={s.right}>
         {renderEditButtons()}
-
-        <div className={s.customerWrapper}>
-          <img src={user6} alt="customer avatar" className={s.img} />
-          <div className={s.nameWrapper}>
-            <div className={s.name}>Екатерина Иванова</div>
-            <div className={s.projects}>Розміщено проектів на биржі: 25</div>
-            <div className={s.ratingWrapper}>
-              <div className={s.rating}>4</div>
-              <div className={s.reviews}>15 відгуків</div>
-            </div>
-          </div>
-        </div>
+        <User/>
         <Button className={s.messageButton}>Написати</Button>
       </div>
     </section>

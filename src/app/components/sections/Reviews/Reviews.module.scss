@@ -24,7 +24,13 @@
     color: #1dbf73;
   }
 }
-
+.blocks{
+  max-width: 758px;
+  width: 100%;
+  >div{
+    margin-bottom: 20px;
+  }
+}
 .items{
   display: grid;
   grid-template-columns: repeat(3, 1fr);

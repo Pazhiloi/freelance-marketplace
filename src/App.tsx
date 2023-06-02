@@ -9,6 +9,7 @@ import OrderPage from "./pages/OrderPage";
 import WorksPage from "./pages/WorksPage";
 import HistoryPage from "./pages/HistoryPage";
 import CreateOrderPage from "./pages/CreateOrderPage";
+import WorkPage from "./pages/WorkPage";
 function App() {
   return (
     <Routes>
@@ -20,6 +21,7 @@ function App() {
         <Route path='/works' element={<WorksPage/>}/>
         <Route path='/history' element={<HistoryPage/>}/>
         <Route path='/order' element={<OrderPage/>}/>
+        <Route path='/work' element={<WorkPage/>}/>
         <Route path='/create/order' element={<CreateOrderPage/>}/>
         <Route path='*' element={<ErrorPage/>}/>
       </Routes>

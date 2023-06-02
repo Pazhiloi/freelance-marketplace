@@ -5,6 +5,47 @@ const myWorks: any[] = []
 const myReviews: any[] = []
 const works: any[] = []
 const orderDocuments: any[] = []
+const plans : any[] = []
+
+
+for (let i = 0; i < 3; i++) {
+  const titles = ["Эконом пакет", "Стандартный пакет", "Премиум пакет"]
+  const options = [];
+
+  for (let j = 0; j < 3; j++) {
+    const optionTitles = [
+      "Планшетная версия",
+      "Перенести в фотошоп",
+      "Подготовка к верстке",
+    ];
+    const option = {
+      id: j + 1,
+      title: optionTitles[j],
+      text: `Настройка всех слоев и назвать так чтобы было понятно верстальщику.`,
+      term: 1,
+      price: 5000,
+    };
+
+  options.push(option);
+
+  }
+  
+  
+  const plan = {
+    id: i + 1,
+    title: titles[i],
+    desc: `Дизайн лэндинга с мобильной и компьютерной версией дизайна.`,
+    price: 50000 * (i + 1),
+    term: 5 - (i + 1),
+    revisions: 5 * (i + 1),
+    bottomTitle: `Дополнительные опции`,
+    options
+  };
+
+  plans.push(plan)
+}
+
+
 
 for (let i = 0; i < 3; i++) {
   const document = {
@@ -79,4 +120,4 @@ works.push(work);
   
 }
 
-export { works, myWorks, myReviews, orderDocuments };
+export { works, myWorks, myReviews, orderDocuments, plans };

@@ -1,10 +1,21 @@
-import React, { FC, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import s from "./Reviews.module.scss";
 import { myReviews } from '../../../data/works';
 import Review from '../../ui/Review/Review';
 import LoadMore from '../../ui/LoadMore/LoadMore';
+import { useLocation } from 'react-router-dom';
 const Reviews: FC = () => {
   const [isChecked, setIsChecked] = useState('pos');
+  const [isWork, setIsWork] = useState(true)
+  const {pathname} = useLocation()
+  useEffect(() => {
+   if (pathname === '/work') {
+     setIsWork(true);
+   }else{
+    setIsWork(false)
+   }
+  }, [pathname])
+  
   return (
     <section className={s.section}>
       <h2 className={`title ${s.title}`}>Відгуки</h2>
@@ -20,9 +31,9 @@ const Reviews: FC = () => {
           Негативні
         </div>
       </div>
-      <div className={s.items}>
+      <div className={ !isWork ?`${s.items}` : `${s.blocks}`}>
         {myReviews.map(({ id, name, rating, img, text }) => (
-          <Review key={id} name={name} rating={rating} img={img} text={text} />
+          <Review  key={id} name={name} rating={rating} img={img} text={text} />
         ))}
       </div>
       <LoadMore/>

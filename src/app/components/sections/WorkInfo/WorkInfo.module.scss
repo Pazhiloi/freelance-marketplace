@@ -1,0 +1,22 @@
+.section{
+  padding: 30px 0;
+  display: flex;
+  
+}
+.left{
+  flex: 0.8;
+}
+
+.title{
+  margin-bottom: 20px;
+}
+.tags{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.text{
+  margin-bottom: 40px;
+}
+
