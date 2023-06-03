@@ -1,9 +1,57 @@
-.sidebar{
-  
+.sidebar {
+  max-width: 532px;
+  width: 100%;
+}
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
 }
 
-.skills{
-  display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 8px;
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+.user {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+
+@media(max-width:1350px){
+  .sidebar{
+    max-width: 400px;
+  }
+  .skills{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .user{
+    > div{
+     > img{
+      width: 80px;
+      height: 80px;
+      }
+      >div{
+        div{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:860px){
+  .sidebar{
+    max-width: 100%;
+  }
+}
+@media(max-width:450px){
+  .sidebar{
+    max-width: 100%;
+  }
+  .skills{
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

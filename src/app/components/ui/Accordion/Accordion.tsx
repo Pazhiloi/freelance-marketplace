@@ -4,16 +4,17 @@ import { chevronDown } from '../../../data/data';
 interface IAccordion {
   title: string;
   content: ReactNode;
+  className?: string;
 }
-const Accordion: FC<IAccordion> = ({ title, content }) => {
+const Accordion: FC<IAccordion> = ({ title, content, className }) => {
   const [isOpen, setIsOpen] = useState(false);
-   const toggleAccordion = () => {
-     setIsOpen(!isOpen);
-   };
+  const toggleAccordion = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div className={s.accordion}>
       <div className={s.top} onClick={toggleAccordion}>
-        <div className={s.title}>{title}</div>
+        <div className={className}>{title}</div>
         <img
           src={chevronDown}
           alt="chevron icon"
@@ -21,9 +22,7 @@ const Accordion: FC<IAccordion> = ({ title, content }) => {
         />
       </div>
 
-      <div
-        className={isOpen? `${s.content} ${s.open}`: `${s.content}`}
-      >
+      <div className={isOpen ? `${s.content} ${s.open}` : `${s.content}`}>
         {content}
       </div>
     </div>

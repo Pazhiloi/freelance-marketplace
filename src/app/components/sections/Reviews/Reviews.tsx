@@ -1,13 +1,17 @@
-import React, { FC, useEffect, useState } from 'react';
+import React, { FC, ReactNode, useEffect, useState } from 'react';
 import s from "./Reviews.module.scss";
 import { myReviews } from '../../../data/works';
 import Review from '../../ui/Review/Review';
 import LoadMore from '../../ui/LoadMore/LoadMore';
 import { useLocation } from 'react-router-dom';
+interface ISection{
+  children: ReactNode
+}
 const Reviews: FC = () => {
   const [isChecked, setIsChecked] = useState('pos');
   const [isWork, setIsWork] = useState(true)
   const {pathname} = useLocation()
+
   useEffect(() => {
    if (pathname === '/work') {
      setIsWork(true);
@@ -15,9 +19,18 @@ const Reviews: FC = () => {
     setIsWork(false)
    }
   }, [pathname])
+
+  const SectionWrapper:FC<ISection> = ({children}) => {
+    if (isWork) {
+      return <div className={s.section}>{children}</div>;
+    }else{
+      return <section className={s.section}>{children}</section>
+    }
+
+  };
   
   return (
-    <section className={s.section}>
+    <SectionWrapper>
       <h2 className={`title ${s.title}`}>Відгуки</h2>
       <div className={s.tabs}>
         <div
@@ -37,7 +50,7 @@ const Reviews: FC = () => {
         ))}
       </div>
       <LoadMore/>
-    </section>
+    </SectionWrapper>
   );
 };
 

@@ -42,11 +42,13 @@ options}) => {
     <div className={s.bottomTitle}>{bottomTitle}</div>
 
     {options.map(option => (
-      <Accordion key={option.id} title={option.title} content={<Additional {...option}/>}/>
+      <Accordion key={option.id} title={option.title} className={s.title} content={<Additional {...option}/>}/>
     ))}
+    <div className={s.buy}>
     <Button className={s.button}>
       Придбати за {price} гривень
     </Button>
+    </div>
   </div>;
 };
 

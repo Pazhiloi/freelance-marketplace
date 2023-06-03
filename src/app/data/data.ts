@@ -37,7 +37,79 @@ import note from "../assets/images/note.svg";
 import settings from "../assets/images/settings.svg";
 import menu from "../assets/images/menu.svg";
 import introduce from "../assets/images/introduce.jpg";
+import frame1 from "../assets/images/slider/frame1.jpg";
+import frame2 from "../assets/images/slider/frame2.jpg";
+import frame3 from "../assets/images/slider/frame3.jpg";
+import frame4 from "../assets/images/slider/frame4.jpg";
+import sliderBtn from "../assets/images/slider/sliderbtn.png";
 import { works } from "./works";
+
+const sliderItems = [
+  {
+    id: 1,
+    img: frame1
+  },
+  {
+    id: 2,
+    img: frame2
+  },
+  {
+    id: 3,
+    img: frame3
+  },
+  {
+    id: 4,
+    img: frame4
+  },
+  {
+    id: 5,
+    img: frame1
+  },
+  {
+    id: 6,
+    img: frame2
+  },
+  {
+    id: 7,
+    img: frame3
+  },
+  {
+    id: 8,
+    img: frame4
+  },
+  {
+    id: 9,
+    img: frame1
+  },
+  {
+    id: 10,
+    img: frame2
+  },
+  {
+    id: 11,
+    img: frame3
+  },
+  {
+    id: 12,
+    img: frame4
+  },
+  {
+    id: 13,
+    img: frame1
+  },
+  {
+    id: 14,
+    img: frame2
+  },
+  {
+    id: 15,
+    img: frame3
+  },
+  {
+    id: 16,
+    img: frame4
+  },
+]
 
 const tags = [
   {
@@ -369,6 +441,8 @@ const faqs = [
   },
 ];
 export {
+  sliderBtn,
+  sliderItems,
   faqs,
   pageUp,
   pageDown,

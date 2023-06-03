@@ -13,10 +13,13 @@ const Sidebar: FC = () => {
         <Accordion
           key={plan.id}
           title={plan.title}
+          className={s.title}
           content={<Plan {...plan} />}
         />
       ))}
+      <div className={s.user}>
       <User />
+      </div>
       <div className={s.skills}>
         {skills.map(({ skill, id }) => (
           <Skill key={id} skill={skill} />

@@ -6,19 +6,19 @@ import OrderTag from '../../ui/OrderTag/OrderTag';
 import WorkFaq from '../../ui/WorkFaq/WorkFaq';
 import Requirements from '../../ui/Requirements/Requirements';
 import Sidebar from '../../ui/Sidebar/Sidebar';
+import Reviews from '../Reviews/Reviews';
+import { sliderItems } from '../../../data/data';
 const WorkInfo: FC = () => {
   return (
     <section className={s.section}>
       <div className={s.left}>
         <h2 className={`${s.title} title`}>Дизайн сайту</h2>
-        <div className={s.skills}>
           <div className={s.tags}>
             {tags.map(({ id, title }) => (
               <OrderTag key={id} id={id} title={title} />
             ))}
           </div>
-        </div>
-        <Slider />
+        <Slider items={sliderItems} />
         <p className={s.text}>
           Привет! Раз уж ты открыл этот work, то тебе нужен классный дизайн для
           твоего сайта. И да, поздравляю, ты по адресу! В UX/UI дизайне я уже 2
@@ -35,9 +35,12 @@ const WorkInfo: FC = () => {
         <div className={s.requirements}>
           <Requirements />
         </div>
+        <div className={s.reviews}>
+          <Reviews />
+        </div>
       </div>
       <div className={s.right}>
-        <Sidebar/>
+        <Sidebar />
       </div>
     </section>
   );

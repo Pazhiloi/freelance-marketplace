@@ -1,8 +1,25 @@
 
-
+.title,
+.accordionTitle,
+.text{
+color: #000;
+}
 .title{
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 20px;
-  color: #000;
+}
+
+.accordionTitle{
+  font-size: 18px;
+}
+
+.text{
+  font-weight: 400;
+}
+
+@media(max-width: 860px){
+  .accordionTitle{
+    font-size: 14px;
+  }
 }

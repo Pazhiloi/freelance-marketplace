@@ -1,0 +1,14 @@
+.title{
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.item{
+  &:not(:last-child){
+    margin-bottom: 10px;
+  }
+  font-weight: 400;
+  color: #000;
+}
