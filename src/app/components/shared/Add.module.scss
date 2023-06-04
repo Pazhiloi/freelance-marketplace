@@ -1,0 +1,24 @@
+.addOption{
+  display: flex;
+  gap: 30px;
+}
+.add{
+  cursor: pointer;
+  width: 307px;
+  height: 400px;
+  background-color: #f2f0fe;
+  border-radius: 20px;
+  border: 1px solid #EBE8FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.addImg{
+  margin-bottom: 20px;
+}
+.addTitle{
+  font-size: 18px;
+  font-weight: 600;
+  color: #fba457;
+}

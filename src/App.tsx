@@ -13,6 +13,7 @@ import WorkPage from "./pages/WorkPage";
 import RightsPage from "./pages/RightsPage";
 import SecPolicyPage from "./pages/SecPolicyPage";
 import ChatPage from "./pages/ChatPage";
+import CreateWorkPage from "./pages/CreateWorkPage";
 function App() {
   return (
     <Routes>
@@ -29,6 +30,7 @@ function App() {
         <Route path='/rights' element={<RightsPage/>}/>
         <Route path='/security' element={<SecPolicyPage/>}/>
         <Route path='/create/order' element={<CreateOrderPage/>}/>
+        <Route path='/create/work' element={<CreateWorkPage/>}/>
         <Route path='*' element={<ErrorPage/>}/>
       </Routes>
   );

@@ -1,0 +1,33 @@
+.title{
+  color: #000;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.option{
+  max-width: 533px;
+  width: 100%;
+  border: 1px solid #F2F0FE;
+border-radius: 20px;
+}
+.buttonWrapper{
+  margin-top: 30px;
+}
+
+.buttonWrapper,
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button{
+  max-width: 420px;
+  width: 100%;
+  height: 60px;
+  background-color: #ffdbdb;
+  color: #ff4343;
+  font-weight: 600;
+  font-size: 20px;
+}

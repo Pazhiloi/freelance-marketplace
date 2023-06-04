@@ -26,6 +26,7 @@ import closeIcon from "../assets/images/close-icon.svg";
 import fileMenu from "../assets/images/fileMenu.svg";
 import notification from "../assets/images/notification.png";
 import add from "../assets/images/add.png";
+import addOrange from "../assets/images/addOrange.png";
 import facebook from "../assets/images/facebook.svg";
 import twitter from "../assets/images/twitter.svg";
 import instagram from "../assets/images/instagram.svg";
@@ -442,6 +443,7 @@ const faqs = [
   },
 ];
 export {
+  addOrange,
   fileMenu,
   sliderBtn,
   sliderItems,
