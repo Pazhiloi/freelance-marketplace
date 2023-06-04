@@ -23,6 +23,7 @@ import orderDocument from "../assets/images/order-document.png";
 import topStar from "../assets/images/top-star.png";
 import topChat from "../assets/images/top-chat.png";
 import closeIcon from "../assets/images/close-icon.svg";
+import fileMenu from "../assets/images/fileMenu.svg";
 import notification from "../assets/images/notification.png";
 import add from "../assets/images/add.png";
 import facebook from "../assets/images/facebook.svg";
@@ -441,6 +442,7 @@ const faqs = [
   },
 ];
 export {
+  fileMenu,
   sliderBtn,
   sliderItems,
   faqs,

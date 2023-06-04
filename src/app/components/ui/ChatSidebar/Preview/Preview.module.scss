@@ -1,0 +1,38 @@
+.preview{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  max-width: 420px;
+  width: 100%;
+  height: 120px;
+  border-radius: 20px;
+  background-color: #F6FAFD;
+  transition: background-color 0.5s ease;
+  &:hover{
+    background-color: #D7FFEC;
+  }
+  &.active{
+    background-color: #D7FFEC;
+  }
+}
+
+.img{
+  width: 80px;
+  height: 80px;
+}
+
+.nameWrapper{
+  margin-left: 20px;
+}
+
+.name{
+  color: #000;
+  margin-bottom: 14px;
+}
+
+.text{
+  font-weight: 400;
+  font-size: 14px;
+  color: #656084;
+}

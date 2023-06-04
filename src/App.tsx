@@ -12,6 +12,7 @@ import CreateOrderPage from "./pages/CreateOrderPage";
 import WorkPage from "./pages/WorkPage";
 import RightsPage from "./pages/RightsPage";
 import SecPolicyPage from "./pages/SecPolicyPage";
+import ChatPage from "./pages/ChatPage";
 function App() {
   return (
     <Routes>
@@ -24,6 +25,7 @@ function App() {
         <Route path='/history' element={<HistoryPage/>}/>
         <Route path='/order' element={<OrderPage/>}/>
         <Route path='/work' element={<WorkPage/>}/>
+        <Route path='/chat' element={<ChatPage/>}/>
         <Route path='/rights' element={<RightsPage/>}/>
         <Route path='/security' element={<SecPolicyPage/>}/>
         <Route path='/create/order' element={<CreateOrderPage/>}/>

@@ -1,0 +1,27 @@
+.messageWrapper {
+  display: flex;
+  &.right {
+    justify-content: flex-end;
+  }
+  &.left {
+    justify-content: flex-start;
+  }
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.message {
+  max-width: fit-content;
+  padding: 12px 24px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  border-radius: 20px;
+
+  &.right {
+    background-color: #d7ffec;
+  }
+  &.left {
+    background-color: #ffeddd;
+  }
+}
