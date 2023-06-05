@@ -10,11 +10,13 @@ const Navigation: FC = () => {
   const closeMenu = () => {
     setMenu();
   };
+
+  const menuClassName = menuActive
+    ? `${s.menuList} ${s.active}`
+    : `${s.menuList}`;
   return (
     <nav className={s.nav}>
-      <div
-        className={menuActive ? `${s.menuList} ${s.active}` : `${s.menuList}`}
-      >
+      <div className={menuClassName}>
         {menuActive ? (
           <img
             onClick={closeMenu}

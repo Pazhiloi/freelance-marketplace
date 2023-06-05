@@ -26,25 +26,32 @@ const Reviews: FC = () => {
     }else{
       return <section className={s.section}>{children}</section>
     }
-
   };
+
+  const positiveClassName =
+    isChecked === "pos" ? `${s.tab} ${s.green}` : `${s.tab}`;
+
+    const negativeClassName =
+      isChecked === "neg" ? `${s.tab} ${s.green}` : `${s.tab}`;
+
+  const itemsClassName = !isWork ? `${s.items}` : `${s.blocks}`;    
   
   return (
     <SectionWrapper>
       <h2 className={`title ${s.title}`}>Відгуки</h2>
       <div className={s.tabs}>
         <div
-          className={isChecked === "pos" ? `${s.tab} ${s.green}` : `${s.tab}`}
+          className={positiveClassName}
         >
           Позитивні
         </div>
         <div
-          className={isChecked === "neg" ? `${s.tab} ${s.green}` : `${s.tab}`}
+          className={negativeClassName}
         >
           Негативні
         </div>
       </div>
-      <div className={ !isWork ?`${s.items}` : `${s.blocks}`}>
+      <div className={itemsClassName}>
         {myReviews.map(({ id, name, rating, img, text }) => (
           <Review  key={id} name={name} rating={rating} img={img} text={text} />
         ))}

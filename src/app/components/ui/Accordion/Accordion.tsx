@@ -11,6 +11,9 @@ const Accordion: FC<IAccordion> = ({ title, content, className }) => {
   const toggleAccordion = () => {
     setIsOpen(!isOpen);
   };
+  const chevronClassName = !isOpen ? `${s.chevron}` : `${s.chevron} ${s.open}`;
+  const contentClassName = isOpen ? `${s.content} ${s.open}` : `${s.content}`;
+  
   return (
     <div className={s.accordion}>
       <div className={s.top} onClick={toggleAccordion}>
@@ -18,11 +21,11 @@ const Accordion: FC<IAccordion> = ({ title, content, className }) => {
         <img
           src={chevronDown}
           alt="chevron icon"
-          className={!isOpen ? `${s.chevron}` : `${s.chevron} ${s.open}`}
+          className={chevronClassName}
         />
       </div>
 
-      <div className={isOpen ? `${s.content} ${s.open}` : `${s.content}`}>
+      <div className={contentClassName}>
         {content}
       </div>
     </div>

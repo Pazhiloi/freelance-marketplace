@@ -17,6 +17,11 @@ const Slider: FC<{ items: ISlider[] }> = ({ items }) => {
     slideOffset,
   } = useSlider(items, s);
 
+  const prevImageClassName = `${s.bigImg} ${s.prevImg}`;
+  const selectedImageClassName = `${s.bigImg} ${
+    isTransitioning ? s.nextImg : ""
+  }`;
+
   return (
     <div className={s.slider}>
       <div className={s.imageWrapper}>
@@ -24,13 +29,13 @@ const Slider: FC<{ items: ISlider[] }> = ({ items }) => {
           <img
             src={prevImage.img}
             alt="previous slide"
-            className={`${s.bigImg} ${s.prevImg}`}
+            className={prevImageClassName}
           />
         )}
         <img
           src={selectedImage.img}
           alt="current slide"
-          className={`${s.bigImg} ${isTransitioning ? s.nextImg : ""}`}
+          className={selectedImageClassName}
         />
         <div onClick={handlePrev} className={s.prev}>
           <SliderBtn />

@@ -33,6 +33,8 @@ const Work: FC<IWork> = ({
   status,
 }) => {
   const classStatus = writeClassForStatus(status || '');
+
+  
   return (
     <div className={s.item}>
       <div className={s.top}>

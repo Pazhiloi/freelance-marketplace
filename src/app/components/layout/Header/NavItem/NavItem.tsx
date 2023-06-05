@@ -16,8 +16,11 @@ const NavItem: FC<INav> = ({link, title}) => {
       setMenu();
     }
   }
+  const itemClassName = menuActive ? `${s.item} ${s.active}` : `${s.item}`;
+
+  
   return (
-    <Link onClick={autoCloseMenu} to={link} className={menuActive? `${s.item} ${s.active}` : `${s.item}`} >
+    <Link onClick={autoCloseMenu} to={link} className={itemClassName}>
       {title}
     </Link>
   );

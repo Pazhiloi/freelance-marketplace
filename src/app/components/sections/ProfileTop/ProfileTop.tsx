@@ -4,12 +4,22 @@ import { avatar2, chevronDown, settings, skills } from "../../../data/data";
 import Skill from "../../ui/Skill/Skill";
 import DetailedInfo from "../../ui/DetailedInfo/DetailedInfo";
 const ProfileTop: FC = () => {
-  const [isDetailActive, setIsDetailActive] = useState(false)
+  const [isDetailActive, setIsDetailActive] = useState(false);
   const isOnline = true;
 
   const handleClick = () => {
-    setIsDetailActive(!isDetailActive)
-  }
+    setIsDetailActive(!isDetailActive);
+  };
+
+  const infoClassName = isDetailActive ? `${s.info} ${s.active}` : `${s.info}`;
+
+  const detailsClassName = isDetailActive
+    ? `${s.details} ${s.active}`
+    : `${s.details}`;
+
+  const statusClassName = isOnline
+    ? `${s.status} ${s.online}`
+    : `${s.status} ${s.offline}`;
   return (
     <section className={s.section}>
       <div className={s.left}>
@@ -27,25 +37,19 @@ const ProfileTop: FC = () => {
             <Skill key={id} skill={skill} />
           ))}
         </div>
-        <div className={isDetailActive? `${s.info} ${s.active}` : `${s.info}`}>
+        <div className={infoClassName}>
           <div className={s.top} onClick={handleClick}>
             <div className={s.topText}>Показати детальну інформацію</div>
             <img src={chevronDown} alt="chevron icon" className={s.topImg} />
           </div>
-          <div className={isDetailActive ?`${s.details} ${s.active}` : `${s.details}`}>
+          <div className={detailsClassName}>
             <DetailedInfo />
           </div>
         </div>
       </div>
       <div className={s.right}>
         <img src={avatar2} alt="avatar img" className={s.avatar} />
-        <div
-          className={
-            isOnline ? `${s.status} ${s.online}` : `${s.status} ${s.offline}`
-          }
-        >
-          {isOnline ? "Онлайн" : "Офлайн"}
-        </div>
+        <div className={statusClassName}>{isOnline ? "Онлайн" : "Офлайн"}</div>
         <div className={s.rating}>4</div>
         <div className={s.settings}>
           <img src={settings} alt="" className={s.settingsImg} />

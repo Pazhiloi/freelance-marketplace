@@ -9,11 +9,19 @@ const UserTop: FC = () => {
   const handleClick = () => {
     setUserMenu()
   }
+  const chevronClassName = userMenuActive
+    ? `${s.chevron} ${s.active}`
+    : `${s.chevron}`;
   return (
     <div className={s.userTop}>
       <div className={s.name}>Ернар Ибрагимов</div>
       <img src={avatar1} alt="avatar icon" className={s.userImg} />
-      <img onClick={handleClick} src={chevronDown} alt="chevron icon" className={userMenuActive ? `${s.chevron} ${s.active}` : `${s.chevron}`} />
+      <img
+        onClick={handleClick}
+        src={chevronDown}
+        alt="chevron icon"
+        className={chevronClassName}
+      />
     </div>
   );
 };

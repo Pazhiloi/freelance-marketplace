@@ -7,10 +7,14 @@ interface IHistoryCheckbox {
   handleClick: any;
 } 
 const HistoryCheckbox: FC<IHistoryCheckbox> = ({ id, title, checked , handleClick}) => {
+
+  const checkboxClassName = checked
+    ? `${s.checkbox} ${s.checked}`
+    : `${s.checkbox}`;
   return (
     <div onClick={() => handleClick(id)} key={id} className={s.item}>
       <div 
-        className={checked ? `${s.checkbox} ${s.checked}` : `${s.checkbox}`}
+        className={checkboxClassName}
       ></div>
       <span className={s.status}>{title}</span>
     </div>

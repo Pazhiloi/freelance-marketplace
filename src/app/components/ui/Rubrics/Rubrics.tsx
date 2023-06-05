@@ -14,6 +14,10 @@ const Rubrics: FC = () => {
       setIsHome(false);
     }
   }, [pathname]);
+
+  const lastItemClassName = !isHome
+    ? `color-orange ${s.lastItem}`
+    : `color-orange ${s.lastItem} item__c`;
   
   return (
     <>
@@ -24,9 +28,7 @@ const Rubrics: FC = () => {
           ))}
           <Button
             className={
-              !isHome
-                ? `color-orange ${s.lastItem}`
-                : `color-orange ${s.lastItem} item__c`
+              lastItemClassName
             }
           >
             Всі категорії

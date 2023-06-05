@@ -6,10 +6,12 @@ import LoginButtons from "./LoginButtons/LoginButtons";
 import { useSticky } from "../../../hooks/useSticky";
 const Header: FC = () => {
   const {isSticky} = useSticky()
+
+  const stickyClassName = isSticky ? `${s.inner} ${s.fixed}` : `${s.inner}`;
   return (
     <header className={s.header}>
       <div className="container">
-        <div className={isSticky? `${s.inner} ${s.fixed}` : `${s.inner}`}>
+        <div className={stickyClassName}>
           <div className={s.left}>
             <Logo />
             <Navigation />

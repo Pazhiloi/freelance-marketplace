@@ -4,21 +4,19 @@ import Button from '../../../ui/Button/Button';
 import { useUI } from '../../../../hooks/useSelectors';
 import UserTop from './UserTop';
 const UserMenu: FC = () => {
-
   const {userMenuActive} = useUI()
+  const userWrapperClassName = userMenuActive
+    ? `${s.userWrapper} ${s.active}`
+    : `${s.userWrapper}`;
 
+    const userInfoClassName = userMenuActive
+      ? `${s.userInfo} ${s.active}`
+      : `${s.userInfo}`;
+      
   return (
-    <div
-      className={
-        userMenuActive ? `${s.userWrapper} ${s.active}` : `${s.userWrapper}`
-      }
-    >
+    <div className={userWrapperClassName}>
       <UserTop />
-      <div
-        className={
-          userMenuActive ? `${s.userInfo} ${s.active}` : `${s.userInfo}`
-        }
-      >
+      <div className={userInfoClassName}>
         {userMenuActive ? (
           <>
             <div className={s.userButtons}>
