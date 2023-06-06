@@ -1,9 +1,10 @@
 import React, { FC } from 'react';
 import s from "./OfferService.module.scss";
 import f from "../../shared/Form.module.scss";
+import Section from '../../ui/Section/Section';
 const OfferService: FC = () => {
   return (
-    <section className={s.section}>
+    <Section>
       <h2 className={`title ${s.sectionTitle}`}>Предложить услугу</h2>
       <form className={s.form}>
         <div className={f.item}>
@@ -35,7 +36,7 @@ const OfferService: FC = () => {
           </button>
         </div>
       </form>
-    </section>
+    </Section>
   );
 };
 

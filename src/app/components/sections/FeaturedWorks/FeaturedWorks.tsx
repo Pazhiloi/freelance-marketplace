@@ -4,9 +4,10 @@ import w from '../../shared/WorkItems.module.scss'
 import { myWorks } from "../../../data/works";
 import LoadMore from "../../ui/LoadMore/LoadMore";
 import Work from "../../ui/Work/Work";
+import Section from "../../ui/Section/Section";
 const FeaturedWorks: FC = () => {
   return (
-    <section className={s.section}>
+    <Section>
       <h1 className={`${s.title} main-title`}>
         <span>Вибрані</span> роботи
       </h1>
@@ -28,7 +29,7 @@ const FeaturedWorks: FC = () => {
         )}
       </div>
       <LoadMore/>
-    </section>
+    </Section>
   );
 };
 

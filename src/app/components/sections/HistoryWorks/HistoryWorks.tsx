@@ -8,6 +8,7 @@ import { myWorks } from '../../../data/works';
 import LoadMore from '../../ui/LoadMore/LoadMore';
 import { useHistoryWorks } from './useHistoryWorks';
 import HistoryCheckboxes from '../../ui/HistoryCheckboxes/HistoryCheckboxes';
+import Section from '../../ui/Section/Section';
 const HistoryWorks: FC = () => {
 const {isHistory} = useHistoryWorks()
   const renderCheckboxes = () => {
@@ -21,7 +22,7 @@ const {isHistory} = useHistoryWorks()
   }
   
   return (
-    <section className={s.section}>
+    <Section>
       <h1 className={`${s.title} main-title`}>
         Історія <span>покупок</span>
       </h1>
@@ -68,7 +69,7 @@ const {isHistory} = useHistoryWorks()
         )}
       </div>
       <LoadMore />
-    </section>
+    </Section>
   );
 };
 

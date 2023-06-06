@@ -3,9 +3,10 @@ import s from "./MarketTop.module.scss";
 import SearchField from "../../ui/SearchField/SearchField";
 import Rubrics from "../../ui/Rubrics/Rubrics";
 import Chevron from "../../ui/Chevron/Chevron";
+import Section from "../../ui/Section/Section";
 const MarketTop: FC = () => {
   return (
-    <section className={s.section}>
+    <Section>
       <h1 className={`main-title ${s.title}`}>
         Шукайте і знаходьте відповідну роботу серед
         <span className="color-green"> багатьох</span> проектів і покажіть, на що
@@ -23,7 +24,7 @@ const MarketTop: FC = () => {
       <div className={s.arrow}>
       <Chevron />
       </div>
-    </section>
+    </Section>
   );
 };
 

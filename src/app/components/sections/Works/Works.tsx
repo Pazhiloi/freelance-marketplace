@@ -8,9 +8,10 @@ import Filters from '../../ui/Filters/Filters';
 import Work from '../../ui/Work/Work';
 import { myWorks } from '../../../data/works';
 import LoadMore from '../../ui/LoadMore/LoadMore';
+import Section from '../../ui/Section/Section';
 const Works: FC = () => {
   return (
-    <section className={s.section}>
+    <Section>
       <div className={s.field}>
         <SearchField />
       </div>
@@ -41,7 +42,7 @@ const Works: FC = () => {
         )}
       </div>
       <LoadMore/>
-    </section>
+    </Section>
   );
 };
 

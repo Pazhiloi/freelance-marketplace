@@ -2,9 +2,10 @@ import React, { FC } from 'react';
 import s from "./MyOrders.module.scss";
 import { works } from '../../../data/works';
 import MyOrder from '../../ui/MyOrder/MyOrder';
+import Section from '../../ui/Section/Section';
 const MyOrders: FC = () => {
   return (
-    <section className={s.section}>
+    <Section>
       <h1 className={`${s.title} maxin-title`}>
         Мої <span>замовлення</span>
       </h1>
@@ -34,7 +35,7 @@ const MyOrders: FC = () => {
           />
         ))}
       </div>
-    </section>
+    </Section>
   );
 };
 

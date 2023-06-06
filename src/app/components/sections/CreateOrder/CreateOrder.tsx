@@ -2,9 +2,10 @@ import React, { FC } from 'react';
 import s from "./CreateOrder.module.scss";
 import f from "../../shared/Form.module.scss";
 import UploadFile from '../../ui/UploadFile/UploadFile';
+import Section from '../../ui/Section/Section';
 const CreateOrder: FC = () => {
   return (
-    <section className={s.section}>
+    <Section>
       <form className={s.form}>
         <div className={`${s.title} title`}>Опублікуйте ваше замовлення</div>
         <div className={f.item}>
@@ -58,7 +59,7 @@ const CreateOrder: FC = () => {
           </button>
         </div>
       </form>
-    </section>
+    </Section>
   );
 };
 

@@ -5,9 +5,10 @@ import Filters from '../../ui/Filters/Filters';
 import { works } from '../../../data/data';
 import Job from '../../ui/Job/Job';
 import LoadMore from '../../ui/LoadMore/LoadMore';
+import Section from '../../ui/Section/Section';
 const Jobs: FC = () => {
   return (
-    <section className={s.section}>
+    <Section>
       <div className={t.top}>
         <div className={t.left}>65 проектів по дизайну</div>
         <div className={t.right}>
@@ -45,7 +46,7 @@ const Jobs: FC = () => {
         )}
       </div>
       <LoadMore/>
-    </section>
+    </Section>
   );
 };
 

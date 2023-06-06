@@ -2,9 +2,10 @@ import React, { FC } from "react";
 import s from "./Offers.module.scss";
 import { myReviews } from "../../../data/works";
 import Offer from "../../ui/Offer/Offer";
+import Section from "../../ui/Section/Section";
 const Offers: FC = () => {
   return (
-    <section className={s.section}>
+    <Section>
       <div className={s.title}>Ставки фрілансерів</div>
       <div className={s.items}>
         {myReviews.map(
@@ -23,7 +24,7 @@ const Offers: FC = () => {
           )
         )}
       </div>
-    </section>
+    </Section>
   );
 };
 

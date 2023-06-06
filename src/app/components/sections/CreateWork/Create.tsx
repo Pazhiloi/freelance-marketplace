@@ -4,9 +4,10 @@ import f from "../../shared/Form.module.scss";
 import First from '../../ui/Stages/First';
 import Second from '../../ui/Stages/Second';
 import Third from '../../ui/Stages/Third';
+import Section from '../../ui/Section/Section';
 const Create: FC = () => {
   return (
-    <section className={s.section}>
+    <Section>
       <form className={s.form}>
         {/* <First/> */}
         {/* <Second/> */}
@@ -20,7 +21,7 @@ const Create: FC = () => {
           </button>
         </div>
       </form>
-    </section>
+    </Section>
   );
 };
 
