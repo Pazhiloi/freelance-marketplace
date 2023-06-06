@@ -9,3 +9,9 @@
   border-radius: 50%;
   background: #F6FAFD
 }
+
+@media(max-width: 430px){
+  .btnWrapper{
+    background: #1dbf73;
+  }
+}
