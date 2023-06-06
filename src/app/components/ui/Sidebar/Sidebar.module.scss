@@ -2,6 +2,12 @@
   max-width: 532px;
   width: 100%;
 }
+
+.plans{
+  background: #F2F0FE;
+border: 1px solid #F2F0FE;
+border-radius: 20px;
+}
 .skills {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

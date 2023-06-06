@@ -9,16 +9,19 @@ import Skill from '../Skill/Skill';
 const Sidebar: FC = () => {
   return (
     <div className={s.sidebar}>
-      {plans.map((plan) => (
-        <Accordion
-          key={plan.id}
-          title={plan.title}
-          className={s.title}
-          content={<Plan {...plan} />}
-        />
-      ))}
+      <div className={s.plans}>
+        {plans.map((plan) => (
+          <Accordion
+            key={plan.id}
+            title={plan.title}
+            className={s.title}
+            content={<Plan {...plan} />}
+          />
+        ))}
+      </div>
+
       <div className={s.user}>
-      <User />
+        <User />
       </div>
       <div className={s.skills}>
         {skills.map(({ skill, id }) => (
