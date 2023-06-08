@@ -1,15 +1,11 @@
-import React, { FC,useState } from 'react';
+import React, { FC } from 'react';
 import s from "./Accordion.module.scss";
 import { chevronDown } from '../../../data/data';
 import { IAccordion } from './accordion.interface';
+import { useAccordion } from './useAccordion';
 
 const Accordion: FC<IAccordion> = ({ title, content, className }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleAccordion = () => {
-    setIsOpen(!isOpen);
-  };
-  const chevronClassName = !isOpen ? `${s.chevron}` : `${s.chevron} ${s.open}`;
-  const contentClassName = isOpen ? `${s.content} ${s.open}` : `${s.content}`;
+  const { chevronClassName, contentClassName, toggleAccordion } = useAccordion(s)
   
   return (
     <div className={s.accordion}>

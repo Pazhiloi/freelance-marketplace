@@ -1,24 +1,15 @@
-import React, { FC, ReactNode, useEffect, useState } from 'react';
+import React, { FC, ReactNode} from 'react';
 import s from "./Reviews.module.scss";
 import { myReviews } from '../../../data/works';
 import Review from '../../ui/Review/Review';
 import LoadMore from '../../ui/LoadMore/LoadMore';
-import { useLocation } from 'react-router-dom';
+import { useReviews } from './useReviews';
 interface ISection{
   children: ReactNode
 }
 const Reviews: FC = () => {
-  const [isChecked, setIsChecked] = useState('pos');
-  const [isWork, setIsWork] = useState(true)
-  const {pathname} = useLocation()
-
-  useEffect(() => {
-   if (pathname === '/work') {
-     setIsWork(true);
-   }else{
-    setIsWork(false)
-   }
-  }, [pathname])
+  const { positiveClassName, negativeClassName, itemsClassName, isWork } =
+    useReviews(s);
 
   const SectionWrapper:FC<ISection> = ({children}) => {
     if (isWork) {
@@ -28,13 +19,7 @@ const Reviews: FC = () => {
     }
   };
 
-  const positiveClassName =
-    isChecked === "pos" ? `${s.tab} ${s.green}` : `${s.tab}`;
-
-    const negativeClassName =
-      isChecked === "neg" ? `${s.tab} ${s.green}` : `${s.tab}`;
-
-  const itemsClassName = !isWork ? `${s.items}` : `${s.blocks}`;    
+   
   
   return (
     <SectionWrapper>

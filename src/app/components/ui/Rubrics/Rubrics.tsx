@@ -1,23 +1,11 @@
-import React, { FC, useEffect, useState } from "react";
+import React, { FC } from "react";
 import s from "./Rubrics.module.scss";
 import { rubrics } from "../../../data/data";
 import Rubric from "./Rubric";
 import Button from "../Button/Button";
-import { useLocation } from "react-router-dom";
+import { useRubrics } from "./useRubrics";
 const Rubrics: FC = () => {
-  const [isHome, setIsHome] = useState(true);
-  const { pathname } = useLocation();
-  useEffect(() => {
-    if (pathname === "/") {
-      setIsHome(true);
-    }else{
-      setIsHome(false);
-    }
-  }, [pathname]);
-
-  const lastItemClassName = !isHome
-    ? `color-orange ${s.lastItem}`
-    : `color-orange ${s.lastItem} item__c`;
+  const {lastItemClassName, isHome} = useRubrics(s)
   
   return (
     <>

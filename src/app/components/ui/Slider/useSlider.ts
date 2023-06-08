@@ -6,6 +6,11 @@ export const useSlider = (images: any, s: any) => {
   const [prevImage, setPrevImage] = useState(selectedImage);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
+  const prevImageClassName = `${s.bigImg} ${s.prevImg}`;
+  const selectedImageClassName = `${s.bigImg} ${
+    isTransitioning ? s.nextImg : ""
+  }`;
+
   const handleClick = (image: ISlider) => {
     setSelectedImage(image);
   };
@@ -42,5 +47,7 @@ export const useSlider = (images: any, s: any) => {
     prevImage,
     isTransitioning,
     slideOffset,
+    prevImageClassName,
+selectedImageClassName
   };
 };

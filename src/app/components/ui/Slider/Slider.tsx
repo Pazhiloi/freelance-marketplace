@@ -13,12 +13,9 @@ const Slider: FC<{ items: ISlider[] }> = ({ items }) => {
     prevImage,
     isTransitioning,
     slideOffset,
+    prevImageClassName,
+    selectedImageClassName,
   } = useSlider(items, s);
-
-  const prevImageClassName = `${s.bigImg} ${s.prevImg}`;
-  const selectedImageClassName = `${s.bigImg} ${
-    isTransitioning ? s.nextImg : ""
-  }`;
 
   return (
     <div className={s.slider}>
@@ -42,22 +39,22 @@ const Slider: FC<{ items: ISlider[] }> = ({ items }) => {
           <SliderBtn />
         </div>
       </div>
-        <div
-          className={`${s.carousel}`}
-          style={{ transform: `translateX(${slideOffset}px)` }}
-        >
-          {items.map((item) => (
-            <img
-              key={item.id}
-              src={item.img}
-              alt=""
-              className={
-                selectedImage === item ? `${s.img} ${s.active}` : `${s.img}`
-              }
-              onClick={() => handleClick(item)}
-            />
-          ))}
-        </div>
+      <div
+        className={`${s.carousel}`}
+        style={{ transform: `translateX(${slideOffset}px)` }}
+      >
+        {items.map((item) => (
+          <img
+            key={item.id}
+            src={item.img}
+            alt=""
+            className={
+              selectedImage === item ? `${s.img} ${s.active}` : `${s.img}`
+            }
+            onClick={() => handleClick(item)}
+          />
+        ))}
+      </div>
     </div>
   );
 };
