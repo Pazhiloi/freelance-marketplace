@@ -1,16 +1,7 @@
 import React, { FC } from 'react';
 import s from './Footer.module.scss'
-interface IInner{
-  id?: number;
-  title: string; 
-}
-interface IItem {
-  item: {
-    id: number;
-    title: string;
-    inner: IInner[];
-  };
-}
+import { IItem } from './footer.interface';
+
 const FooterItem: FC<IItem> = ({item}) => {
   const {title, inner} = item;
 

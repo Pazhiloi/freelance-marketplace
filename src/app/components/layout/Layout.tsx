@@ -1,12 +1,11 @@
-import React, {FC, ReactNode} from 'react';
+import React, {FC} from 'react';
 
 import s from './Layout.module.scss'
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
+import { ILayout } from './layout.interface';
 
-interface ILayout {
-  children: ReactNode;
-}
+
 const Layout: FC<ILayout> = ({children}) => {
   return (
     <div className='app-container'>

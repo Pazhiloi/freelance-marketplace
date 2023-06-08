@@ -1,9 +1,7 @@
 import React, { FC } from 'react';
 import s from "./Footer.module.scss";
-interface IFollowImage{
-  desc: string;
-  img: string;
-}
+import { IFollowImage } from './footer.interface';
+
 const FollowImage: FC<IFollowImage> = ({desc, img}) => {
   return (
     <img src={img} alt={desc} className={s.img} />
