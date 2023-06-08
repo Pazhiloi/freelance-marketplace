@@ -1,9 +1,6 @@
 import React, { FC } from 'react';
 import s from './Message.module.scss'
-interface IMessage {
-  text: string;
-  isYours: boolean;
-}
+import { IMessage } from './message.interface';
 const Message: FC<IMessage> = ({text,
 isYours}) => {
   const sideClassName = isYours

@@ -2,9 +2,6 @@ import React, { FC } from 'react';
 import s from "./UploadFile.module.scss";
 import { fileText, pageDown, pageUp } from '../../../data/data';
 const UploadFile: FC = () => {
-
-  
-
   return (
     <div className={s.wrapper}>
       <div className={s.fileContainer}>

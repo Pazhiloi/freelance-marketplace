@@ -1,9 +1,6 @@
 import React, { FC } from 'react';
 import s from './Chevron.module.scss'
-
-interface IChevron {
-  className?: string;
-}
+import { IChevron } from './chevron.interface';
 const Chevron: FC<IChevron> = ({className}) => {
   return (
     <svg

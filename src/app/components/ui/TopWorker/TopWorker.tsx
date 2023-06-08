@@ -2,15 +2,7 @@ import React, { FC } from "react";
 import s from "./TopWorker.module.scss";
 import b from "../../shared/ActualButton.module.scss";
 import Button from "../Button/Button";
-
-interface ITopWorker {
-  img: string;
-  name: string;
-  profession: string;
-  projectsCompleted: number;
-  rating: number;
-  online: boolean;
-}
+import { ITopWorker } from "./top-worker.interface";
 const TopWorker: FC<ITopWorker> = ({
   img,
   name,

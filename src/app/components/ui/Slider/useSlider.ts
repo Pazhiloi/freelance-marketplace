@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from "react";
-import { ISlider } from "./Slider";
+import { useEffect, useState } from "react";
+import { ISlider } from "./slider.interface";
 
 export const useSlider = (images: any, s: any) => {
   const [selectedImage, setSelectedImage] = useState(images[0]);

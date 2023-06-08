@@ -1,16 +1,8 @@
 import React, { FC } from 'react';
 import s from "./Offer.module.scss";
 import Button from '../Button/Button';
-interface IOffer {
-  id: number;
-  name: string;
-  rating: number;
-  img: string;
-  text: string;
-  price: number;
-  improvements: number;
-  workTerm: number;
-}
+import { IOffer } from './offer.interface';
+
 const Offer: FC<IOffer> = ({
   id,
   name,

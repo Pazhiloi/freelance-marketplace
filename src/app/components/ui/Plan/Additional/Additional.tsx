@@ -1,11 +1,10 @@
 import React, { FC } from "react";
 import s from "./Additional.module.scss";
-import { IOption } from "../Plan";
 import Button from "../../Button/Button";
 import { getDayString } from "../../../../utils/string/getDayString";
+import { IOption } from "../plan.interface";
 
 const Additional: FC<IOption> = ({ text, term, price }) => {
-
   const dayString = getDayString(term);
   return (
     <div className={s.option}>

@@ -1,16 +1,7 @@
 import React, { FC } from 'react';
 import s from "./Job.module.scss";
-interface IJob {
-  title: string;
-  price: number;
-  name: string;
-  img: string;
-  projects: number;
-  rating: number;
-  reviews: number;
-  uploaded: string;
-  offers: number;
-}
+import { IJob } from './job.interface';
+
 const Job: FC<IJob> = ({
   title,
   price,

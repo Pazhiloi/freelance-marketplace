@@ -2,9 +2,8 @@ import React, { FC } from 'react';
 import s from "./AddPlan.module.scss";
 import f from "../../../shared/Form.module.scss";
 import Button from '../../Button/Button';
-interface IAddPlan {
-  title: string;
-}
+import { IAddPlan } from './add-plan.interface';
+
 const AddPlan: FC<IAddPlan> = ({title}) => {
   return (
     <div className={s.plan}>

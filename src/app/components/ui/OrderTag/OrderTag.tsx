@@ -1,10 +1,8 @@
 import React, { FC } from 'react';
 import s from "./OrderTag.module.scss";
 import { chevronRight, tags } from '../../../data/data';
-interface IOrderTag {
-  id: number;
-  title: string;
-}
+import { IOrderTag } from './order-tag.interface';
+
 const OrderTag: FC<IOrderTag> = ({ id, title }) => {
   const renderChevron = () => {
     if (id !== tags.length) {

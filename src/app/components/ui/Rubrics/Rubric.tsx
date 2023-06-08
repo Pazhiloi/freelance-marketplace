@@ -2,11 +2,8 @@ import React, { FC, useState } from 'react';
 import Button from '../Button/Button';
 import s from './Rubrics.module.scss'
 import { writeClassForGrids } from '../../../utils/classes/writeClassForGrids';
-interface IRubric{
-  title: string;
-  id: number;
-  isHome:boolean;
-}
+import { IRubric } from './rubrics.interface';
+
 const Rubric: FC<IRubric> = ({ title, id, isHome }) => {
   const [classes, setClasses] = useState(writeClassForGrids(id));
 

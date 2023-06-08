@@ -1,11 +1,6 @@
 import React, { FC } from 'react';
 import s from "./Review.module.scss";
-interface IReview {
-  name: string;
-  rating: number;
-  img: string;
-  text: string;
-}
+import { IReview } from './review.interface';
 const Review: FC<IReview> = ({ name, rating, img, text }) => {
   return <div className={s.item}>
     <div className={s.top}>

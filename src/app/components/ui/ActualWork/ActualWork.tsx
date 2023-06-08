@@ -2,11 +2,8 @@ import React, { FC } from 'react';
 import s from './ActualWork.module.scss'
 import b from '../../shared/ActualButton.module.scss'
 import Button from '../Button/Button';
-interface IActualWork {
-  img: string;
-  title: string;
-  description: string;
-}
+import { IActualWork } from './actual-work.interface';
+
 const ActualWork: FC<IActualWork> = ({ img, title, description }) => {
   return (
     <div className={s.item}>

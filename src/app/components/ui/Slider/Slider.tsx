@@ -2,10 +2,8 @@ import React, { FC } from "react";
 import s from "./Slider.module.scss";
 import { useSlider } from "./useSlider";
 import SliderBtn from "./SliderBtn/SliderBtn";
-export interface ISlider {
-  id: number;
-  img: string;
-}
+import { ISlider } from "./slider.interface";
+
 const Slider: FC<{ items: ISlider[] }> = ({ items }) => {
   const {
     handleClick,

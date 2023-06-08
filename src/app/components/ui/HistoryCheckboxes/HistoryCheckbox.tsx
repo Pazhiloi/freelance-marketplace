@@ -1,11 +1,7 @@
 import React, { FC } from 'react';
 import s from "./HistoryCheckboxes.module.scss";
-interface IHistoryCheckbox {
-  id: number;
-  title: string;
-  checked: boolean;
-  handleClick: any;
-} 
+import { IHistoryCheckbox } from './checkboxes.interface';
+
 const HistoryCheckbox: FC<IHistoryCheckbox> = ({ id, title, checked , handleClick}) => {
 
   const checkboxClassName = checked

@@ -1,15 +1,8 @@
 import React, { FC } from 'react';
 import s from "./MyOrder.module.scss";
 import { writeClassForStatus } from '../../../utils/classes/writeClassForStatus';
+import { IMyOrder } from './my-order.interface';
 
-interface IMyOrder {
-  title: string;
-  price: number;
-  uploaded: string;
-  offers: number;
-  status: string;
-  text: string;
-}
 const MyOrder: FC<IMyOrder> = ({ title, price, uploaded, offers, status, text }) => {
   const classStatus = writeClassForStatus(status)
   return <div className={s.item}>

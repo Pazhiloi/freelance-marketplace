@@ -1,9 +1,6 @@
 import React, { FC } from 'react';
 import s from "./Preview.module.scss";
-interface IPreview {
-  name: string;
-  img: string;
-}
+import { IPreview } from './preview.interface';
 const Preview: FC<IPreview> = ({name, img}) => {
   return (
     <div className={s.preview}>

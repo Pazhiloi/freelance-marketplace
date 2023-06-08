@@ -3,21 +3,7 @@ import s from "./Work.module.scss";
 import FeatureStar from "../FeatureStar/FeatureStar";
 import Button from "../Button/Button";
 import { writeClassForStatus } from "../../../utils/classes/writeClassForStatus";
-
-interface IWork {
-  id: number;
-  title: string;
-  price: number;
-  img: string;
-  userImg: string;
-  name: string;
-  rating: number;
-  projects: number;
-  isHistory?: boolean;
-  status?: string;
-  plan?: string;
-  date?: string;
-}
+import { IWork } from "./work.interface";
 const Work: FC<IWork> = ({
   id,
   title,
@@ -34,7 +20,6 @@ const Work: FC<IWork> = ({
 }) => {
   const classStatus = writeClassForStatus(status || '');
 
-  
   return (
     <div className={s.item}>
       <div className={s.top}>

@@ -4,23 +4,8 @@ import Accordion from '../Accordion/Accordion';
 import Additional from './Additional/Additional';
 import Button from '../Button/Button';
 import { getDayString } from '../../../utils/string/getDayString';
-export interface IOption {
-  id: number;
-  title: string;
-  text: string;
-  term: number;
-  price: number;
-}
-interface IPlan {
-  id: number;
-  title: string;
-  desc: string;
-  price: number;
-  term: number;
-  revisions: number;
-  bottomTitle: string;
-  options: IOption[];
-}
+import { IPlan } from './plan.interface';
+
 const Plan: FC<IPlan> = ({id,
 title,
 desc,
